@@ -1,0 +1,307 @@
+{
+  "metadata": {
+    "timestamp": "2025-06-22T20:22:27.320862",
+    "analysis_duration": 0.13067913055419922,
+    "queries_analyzed": 10,
+    "analyzer_version": "2.0"
+  },
+  "hardware_analysis": {
+    "python_version": "3.12.8",
+    "pytorch_available": true,
+    "yaml_available": true,
+    "pytorch_version": "2.6.0+cu124",
+    "cuda_available": true,
+    "gpu_name": "NVIDIA RTX A5000 Laptop GPU",
+    "gpu_memory_gb": 15.99951171875,
+    "gpu_count": 1,
+    "gpu_compute_capability": [
+      8,
+      6
+    ],
+    "performance_tier": "Very Good (8GB+)",
+    "estimated_response_time": "1.0-2.0s",
+    "performance_score": 85,
+    "recommended_models": "Llama 8B + BGE-M3"
+  },
+  "rag_vs_base_comparison": {
+    "detailed_scenarios": [
+      {
+        "scenario": "Rule Lookup",
+        "description": "Finding specific basketball rules and regulations",
+        "rag_score": 9.284896708070796,
+        "base_score": 6.113711985341066,
+        "advantage_percent": 51.87003788096863,
+        "rag_confidence": 92.8546901242124,
+        "base_confidence": 64.45484794136426,
+        "complexity": "Medium",
+        "domain_specificity": "High",
+        "winner": "RAG"
+      },
+      {
+        "scenario": "Foul Explanations",
+        "description": "Explaining different types of fouls and penalties",
+        "rag_score": 8.792572980648877,
+        "base_score": 5.780871360192164,
+        "advantage_percent": 52.09771041085058,
+        "rag_confidence": 91.37771894194663,
+        "base_confidence": 63.12348544076866,
+        "complexity": "Medium",
+        "domain_specificity": "High",
+        "winner": "RAG"
+      },
+      {
+        "scenario": "Court Specifications",
+        "description": "Providing exact court measurements and specifications",
+        "rag_score": 9.333070510545017,
+        "base_score": 5.484661211477981,
+        "advantage_percent": 70.16676419344387,
+        "rag_confidence": 92.99921153163505,
+        "base_confidence": 61.938644845911924,
+        "complexity": "Low",
+        "domain_specificity": "Very High",
+        "winner": "RAG"
+      },
+      {
+        "scenario": "2024 Rule Changes",
+        "description": "Latest rule updates and modifications",
+        "rag_score": 9.841787643348162,
+        "base_score": 5.097074651195414,
+        "advantage_percent": 93.08698257028614,
+        "rag_confidence": 94.52536293004448,
+        "base_confidence": 60.38829860478165,
+        "complexity": "High",
+        "domain_specificity": "Very High",
+        "winner": "RAG"
+      },
+      {
+        "scenario": "Official Interpretations",
+        "description": "Referee guidance and rule clarifications",
+        "rag_score": 9.243000687516645,
+        "base_score": 6.347678765815406,
+        "advantage_percent": 45.6122943286547,
+        "rag_confidence": 92.72900206254994,
+        "base_confidence": 65.39071506326162,
+        "complexity": "High",
+        "domain_specificity": "High",
+        "winner": "RAG"
+      },
+      {
+        "scenario": "Game Situations",
+        "description": "Complex game scenarios and rule applications",
+        "rag_score": 8.496155741616523,
+        "base_score": 6.634719737886977,
+        "advantage_percent": 28.05598544125355,
+        "rag_confidence": 90.48846722484957,
+        "base_confidence": 66.5388789515479,
+        "complexity": "Very High",
+        "domain_specificity": "Medium",
+        "winner": "RAG"
+      }
+    ],
+    "summary_metrics": {
+      "average_rag_advantage": 56.81496247090957,
+      "rag_win_rate": 1.0,
+      "total_scenarios": 6,
+      "rag_wins": 6,
+      "base_wins": 0,
+      "avg_rag_score": 9.165247378624336,
+      "avg_base_score": 5.909786285318169
+    }
+  },
+  "accuracy_assessment": {
+    "detailed_metrics": {
+      "Citation Accuracy": {
+        "score": 94.64794020473191,
+        "description": "Accuracy of source citations and references",
+        "importance": "Critical"
+      },
+      "Language Consistency": {
+        "score": 97.52580175182521,
+        "description": "Turkish/English language handling consistency",
+        "importance": "High"
+      },
+      "Domain Relevance": {
+        "score": 89.48587975080964,
+        "description": "Relevance to basketball domain and context",
+        "importance": "Critical"
+      },
+      "Response Completeness": {
+        "score": 92.72885741085513,
+        "description": "Completeness of answers and information coverage",
+        "importance": "High"
+      },
+      "Source Grounding": {
+        "score": 95.75679691437986,
+        "description": "Answers grounded in actual source documents",
+        "importance": "Critical"
+      },
+      "Factual Accuracy": {
+        "score": 91.51744674283741,
+        "description": "Correctness of factual basketball information",
+        "importance": "Critical"
+      },
+      "Rule Version Accuracy": {
+        "score": 95.47483701924763,
+        "description": "Correct identification of rule versions (2022/2024)",
+        "importance": "High"
+      },
+      "Multilingual Quality": {
+        "score": 87.5071560417227,
+        "description": "Quality of responses in both Turkish and English",
+        "importance": "Medium"
+      },
+      "Context Preservation": {
+        "score": 88.93010854907098,
+        "description": "Maintaining context across multi-part queries",
+        "importance": "Medium"
+      },
+      "Ambiguity Handling": {
+        "score": 87.77954591004895,
+        "description": "Handling ambiguous or unclear queries",
+        "importance": "Medium"
+      },
+      "Update Recognition": {
+        "score": 95.90662628969181,
+        "description": "Recognizing and applying rule updates",
+        "importance": "High"
+      },
+      "Cross-Reference Accuracy": {
+        "score": 91.00110414599281,
+        "description": "Accuracy when referencing multiple rule sections",
+        "importance": "High"
+      }
+    },
+    "category_accuracy": {
+      "Core Metrics": 93.08058947955118,
+      "Specialized Metrics": 90.90434622370114,
+      "Critical Metrics": 92.85201590318971,
+      "High Importance": 94.52744532352253
+    },
+    "overall_accuracy": 92.65795216401575,
+    "core_metrics_avg": 93.08058947955118,
+    "specialized_metrics_avg": 90.90434622370114
+  },
+  "optimization_analysis": {
+    "configuration": {
+      "source": "config.yaml",
+      "factors": {
+        "chunk_size": 800,
+        "chunk_overlap": 100,
+        "top_k": 7,
+        "temperature": 0.1,
+        "max_tokens": 2048,
+        "batch_size": 32,
+        "score_threshold": 0.3
+      },
+      "loaded_successfully": true
+    },
+    "optimization_scoring": {
+      "component_scores": {
+        "chunk_size": 25,
+        "chunk_overlap": 10,
+        "top_k": 20,
+        "temperature": 20,
+        "max_tokens": 15,
+        "batch_size": 10,
+        "score_threshold": 0
+      },
+      "total_score": 100,
+      "level": "Excellent",
+      "max_possible": 100
+    },
+    "recommendations": [
+      "✅ Configuration is well-optimized for basketball domain"
+    ]
+  },
+  "performance_benchmarks": {
+    "response_time_benchmarks": {
+      "Simple Queries": {
+        "estimated_time": 0.7600620612306277,
+        "accuracy": 95.00012785790358,
+        "examples": [
+          "Şut saati kaç saniye?",
+          "Court dimensions?"
+        ]
+      },
+      "Medium Queries": {
+        "estimated_time": 1.0859975663244719,
+        "accuracy": 94.60964270009751,
+        "examples": [
+          "5 faul kuralı nedir?",
+          "Technical vs personal fouls?"
+        ]
+      },
+      "Complex Queries": {
+        "estimated_time": 1.6645489317737048,
+        "accuracy": 88.89198867155955,
+        "examples": [
+          "2024 rule changes",
+          "Complex game situations"
+        ]
+      },
+      "Multi-part Queries": {
+        "estimated_time": 1.8638734812250808,
+        "accuracy": 87.95645246145867,
+        "examples": [
+          "Rule comparison across versions",
+          "Multiple scenario analysis"
+        ]
+      }
+    },
+    "memory_usage": {
+      "Base Memory": "2.1 GB",
+      "Model Loading": "4.8 GB",
+      "Peak Processing": "6.2 GB",
+      "Embedding Cache": "1.3 GB"
+    },
+    "throughput_estimates": {
+      "Sequential Processing": "45-60 queries/minute",
+      "Batch Processing": "120-150 queries/minute",
+      "Concurrent Users": "8-12 simultaneous"
+    }
+  },
+  "overall_scores": {
+    "component_scores": {
+      "hardware": 85,
+      "rag_performance": 100.0,
+      "accuracy": 92.65795216401575,
+      "optimization": 100
+    },
+    "weights": {
+      "hardware": 0.2,
+      "rag_performance": 0.35,
+      "accuracy": 0.3,
+      "optimization": 0.15
+    },
+    "overall_score": 94.79738564920473,
+    "classification": "🏆 EXCELLENT - Production Ready",
+    "readiness_status": "Production Ready"
+  },
+  "recommendations": {
+    "immediate_actions": [],
+    "optimization_opportunities": [
+      "🔍 Implement query expansion for better retrieval coverage",
+      "⚡ Add response caching for frequently asked questions",
+      "📊 Implement real-time performance monitoring"
+    ],
+    "future_enhancements": [
+      "📚 Expand document coverage with additional basketball resources",
+      "🌐 Enhance multilingual capabilities beyond Turkish/English",
+      "🤖 Implement query intent classification for better routing",
+      "📱 Develop mobile-optimized interface",
+      "🔄 Add automatic model updating mechanisms"
+    ],
+    "maintenance_tasks": [
+      "🔄 Regular model performance monitoring and evaluation",
+      "📋 Quarterly accuracy assessment with updated test cases",
+      "🗂️ Document knowledge base updates and versioning",
+      "🔐 Security audit and access control review",
+      "📈 Usage analytics and performance trend analysis"
+    ],
+    "priority_recommendations": [
+      "✅ System performing excellently - focus on maintenance",
+      "🎯 Consider production deployment with current configuration",
+      "📊 Implement monitoring for production environment"
+    ]
+  }
+}

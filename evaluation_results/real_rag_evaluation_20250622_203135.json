@@ -1,0 +1,759 @@
+{
+  "individual_results": [
+    {
+      "query_id": 1,
+      "query": "5 faul yapan oyuncuya ne olur?",
+      "category": "fouls",
+      "difficulty": "easy",
+      "retrieval_time": 0.8277368545532227,
+      "rag_generation_time": 6.532010793685913,
+      "base_generation_time": 0.5007634162902832,
+      "total_rag_time": 7.359747648239136,
+      "total_time": 7.860517978668213,
+      "rag_answer": "5 faul yapan oyuncu, oyunu derhal terk edecektir. (Kaynak 1 - basketbol_oyun_kurallari_degisiklikleri_2024.txt)\n\nMadde 40.1 - 5 faul yapmış olan bir oyuncu hakem tarafından bilgilendirilecek ve oyunu derhal terk edecektir.\n\nBu oyuncuya verilecek başka herhangi bir teknik ya da diskalifiye edici faul veya sportmenlik dışı davranış faulü, başantrenöre 'B' olarak kaydedilecek ve buna göre cezalandırılacaktır. (Kaynak 3 - basketbol_oyun_kurallari_resmi_yorumlar_2023.txt)\n\nMadde 37-8",
+      "base_answer": "Oyuncu saha dışına çıkarılır ve bir dakika sürecek ceza suresi başlar.",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "Kural Değişiklikleri 2024\nEski Tanım\nMadde 40 - Bir oyuncunun 5 faulü\nYeni Tanım\nMadde 40 - Bir oyuncunun faul kısıtlamaları ve oyundan diskalifiyeleri\n40.1 - 5 faul yapmış olan bir oyuncu hakem tarafından bilgilendirilecek ve oyunu derhal terk edecektir.\n40.2 Oyuncu-başantrenör olarak 5 faulünü almış olan bir oyuncu oyun dışı kalmış bir oyuncudur fakat\nbaşantrenör olarak görevine devam edebilir.\n40.3 - Daha önce 5 faul yapmış olan bir oyuncunun yaptığı faul, oyun dışı kalmış oyuncunun faulü olarak\nkabul edilir ve maç kağıdında başantrenöre kaydedilir ('B').\n40.4 - 2 teknik faul veya 2 sportmenlik dışı faul ya da 1 sportmenlik dışı faul ve 1 teknik faul alan oyuncuya\noyundan diskalifiye olduğunun bildirimi, süre görevlisi tarafından oyundan diskalifiye (GD) göstergesi ile\nyapılacaktır.",
+          "source": "basketbol_oyun_kurallari_degisiklikleri_2024.txt",
+          "doc_type": "changes",
+          "year": "2024",
+          "chunk_id": "6"
+        },
+        {
+          "content": "49\n\n\fBASKETBOL OYUN KURALLARI\n\nKURAL YEDİ – GENEL KOŞULLAR\nMadde 40\n\nBir oyuncunun 5 faulü\n\n40.1\n\n5 faul yapmış olan oyuncu, bir hakem tarafından bilgilendirilecek ve oyunu derhal terk edecektir.\n30 saniye içinde değiştirilecektir.\nDaha önce 5 faul yapmış olan bir oyuncunun yapacağı fauller, oyun dışı kalmış oyuncunun faulü\nolarak kabul edilir ve bu faul maç kağıdında başantrenöre kaydedilir ('B').\n\n40.2",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "205"
+        },
+        {
+          "content": "Haziran 2023-v3.0a\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n74\n\n\fRESMİ YORUMLAR\n\n37-8 Açıklama: Bir oyuncu, beşinci kişisel faulünü yaptıktan sonra oyun dışı oyuncu olur. Bu oyuncuya verilecek\nbaşka herhangi bir teknik ya da diskalifiye edici faul veya sportmenlik dışı davranış faulü, başantrenöre\n'B' olarak kaydedilecek ve buna göre cezalandırılacaktır.\n37-9",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "350"
+        },
+        {
+          "content": "Örnek: A1’e beşinci kişisel faulü verilir. Bu A takımının o çeyrekteki ikinci takım faulüdür. Takım sıra\nbölgesine giderken\n(a) A1, bir hakeme sözlü hakaret eder.\n(b) A1, B2’nin yüzüne yumruk atar.\nHer iki durumda da, A1’e diskalifiye edici bir faul verilir.\nYorum: A1, beşinci kişisel faulü ile oyun dışı oyuncu olmuştur. A1, bir hakeme sözlü tacizde bulunduğu ya\nda B2’ye yumruk attığı için diskalifiye edilmiş bir oyun dışı oyuncu olmuştur. A1'in diskalifiye edici faulü\nmaç kağıdına, A1'e 'D' olarak ve A takımının başantrenörüne de 'B2' olarak kaydedilecektir.\n(a) Herhangi bir B takımı oyuncusu kimse dizilmeden 2 serbest atış kullanacaktır.\n(b)\nB2 kimse dizilmeden 2 serbest atış kullanacaktır.",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "358"
+        },
+        {
+          "content": "Açıklama: Bir oyuncu kişisel, teknik veya sportmenlik dışı faul yaparak beşinci faulünü almasıyla oyun dışı\nkalmış bir oyuncu olur ve takım sıra bölgesinde oturabilir.\nHakemler oyun saati çalışırken oyun dışı kalmış bir oyuncunun sahada olduğunu fark ederse o oyuncu\nkurallara aykırı bir şekilde sahada kalmış veya tekrar girmiş olmalıdır.\nHata rakipleri dezavantajlı duruma düşürmeden derhal düzeltilmelidir.\nKurallara aykırı olarak katılımın fark edildiği anla oynanan süre ara geçen zaman arasında bütün olanlar\ngeçerliliğini koruyacaktır.\nOyun dışı kalmış olan oyuncu oyundan çıkarılacak ve o takımın başantrenörüne ‘B1 ’ olarak kaydedilen bir\nteknik faul verilecektir Başantrenör oyun sırasında oyun saatinin çalıştığı dönemlerde sahada yalnızca",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "304"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "rules_2022",
+        "interpretations_2023"
+      ],
+      "retrieved_sources": [
+        "rules",
+        "interpretations",
+        "changes"
+      ],
+      "rag_answer_length": 483,
+      "base_answer_length": 70,
+      "rag_citations": 5,
+      "base_citations": 0,
+      "rag_relevance_score": 2,
+      "base_relevance_score": 1,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 2,
+      "query": "Şut saati kaç saniyedir?",
+      "category": "timing",
+      "difficulty": "easy",
+      "retrieval_time": 0.0394749641418457,
+      "rag_generation_time": 1.9317512512207031,
+      "base_generation_time": 0.16526293754577637,
+      "total_rag_time": 1.9712262153625488,
+      "total_time": 2.136491298675537,
+      "rag_answer": "Şut saati 14 saniye göstermektedir. (Kaynak 1 - basketbol_oyun_kurallari_resmi_yorumlar_2023.txt (2023), 29/50-14)",
+      "base_answer": "20 saniye.",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "şut saati sesli işaretini verdiğinde topun şut atan oyuncunun ellerinde olup olmadığına ve atış\ndurumunun uzağındaki bir faulün ne zaman olduğuna karar vermek için kullanılabilir.\nEğer inceleme, B2'nin faulünün şut saati sesli işaretini vermeden önce ve B2'nin faulünün A1 atış\nhalindeyken yapıldığını ortaya koyarsa, B2'nin faulü verilecektir ve A1'in sayısı geçerli sayılacaktır.\nŞut saati sesli işareti dikkate alınmayacaktır. Oyun A takımı tarafından ön sahasında B2'nin faulünün\nmeydana geldiği en yakın yerden topu oyuna sokmasıyla devam edecektir. A takımının şut saatinde 14\nsaniyesi olacaktır.\nEğer inceleme, top A1'in ellerini terk etmeden ve B2'nin faulü yapılmadan önce şut saati sesli işaretini",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "456"
+        },
+        {
+          "content": "29/50-14\n\nÖrnek: Şut saati 8 saniye göstermektedir ve A1 ön sahada dripling yaparken,\n(a) B1, A takımının ön sahasında, topu sahanın dışına doğru tipler.\n(b) B1, A1’e faul yapar. Bu, B takımının o çeyrekteki ikinci takım faulüdür.\nYorum: Oyun, A takımı tarafından ön sahada topu oyuna sokmasıyla devam edecektir ve A takımının\nşut saatinde,\n(a) 8 saniyesi\n(b) 14 saniyesi olacaktır.\n\n29/50-15\n\nÖrnek: A takımı, şut saatinde 4 saniyeyle ön sahasındaki topu kontrol ederken,\n(a) A1, veya\n(b) B1\nsakatlanır. Hakemler oyunu durdurur.\nYorum: A takımının şut saatinde:\n(a) 4 saniyesi,\n(b) 14 saniyesi olacaktır.\n\n29/50-16",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "197"
+        },
+        {
+          "content": "29/50-55\n\nÖrnek: Oyun saatinde 23 saniye kala A1 oyun sahasında yeni bir top kontrolü kazanır. Şut saati\ngörüntüsü kapalıdır. Oyun saatinde 19 saniye kala A1 sayı amacıyla bir şut girişiminde bulunur.\nTop çembere temas eder ve A Takımı oyun saatinde 16 saniye kala A2’nin ribaunduyla topun\nkontrolünü yeniden kazanır.\nYorum: Oyun, oyun saatinde 16 saniye ile devam edecektir. Şut saati açılacaktır. A takımı topun\nkontrolünü yeniden kazandığında oyun saatinde 14 saniyeden fazla süre olduğundan, A takımının şut\nsaatinde 14 saniyesi olacaktır.\n\n29/50-56",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "226"
+        },
+        {
+          "content": "Madde 28\n\n8 saniye\n\n28-1\n\nAçıklama: Şut saati bir hava atışı durumu nedeniyle durdurulur. Hava atışı durumu sonucunda pozisyon\nsırasına göre topun oyuna sokulması, kendi geri sahasında topu kontrol eden takıma verilirse 8 saniye\nsüresi devam edecektir.\n\n28-2\n\nÖrnek: Bir tutulmuş top durumu oluştuğunda A1, 5 saniye boyunca kendi geri sahasında dripling\nyapmıştır. A Takımı bir sonraki pozisyon sırasına göre topu oyuna sokma hakkına sahiptir.\nYorum: A takımının topu ön sahasına geçirmesi için sadece 3 saniyesi olacaktır.\n\n28-3\n\nAçıklama: Geri sahadan ön sahaya yapılan dripling sırasında, dripling yapan oyuncunun her iki ayağı ve top\ntamamen ön sahayla temas halindeyken top, bir takımın ön sahasındadır.\n\n28-4",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "178"
+        },
+        {
+          "content": "29/50-18\n\nÖrnek: Şut saati:\n(a) 16 saniye veya\n(b) 12 saniye,\ngösterirken, geri sahasındaki B1, topa bilerek ayağıyla tekme attığında ya da yumruğuyla topa\nvurduğunda A1, A takımının ön sahasında bulunan A2’ye pas atmaktadır\nYorum: Her iki durumda da bu, topa bilerek ayağıyla tekme attığından ya da topa yumruğuyla\nvurduğundan dolayı B1’in ihlalidir. Oyun, şut saati,\n(a) 16 saniye\n(b) 14 saniye\ngösterecek şekilde A takımı tarafından, ön sahasından topu oyuna sokmasıyla devam edecektir.\n\nHaziran 2023-v3.0a\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n46\n\n\fRESMİ YORUMLAR\n\n29/50-19",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "199"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "rules_2022"
+      ],
+      "retrieved_sources": [
+        "interpretations"
+      ],
+      "rag_answer_length": 114,
+      "base_answer_length": 10,
+      "rag_citations": 3,
+      "base_citations": 0,
+      "rag_relevance_score": 2,
+      "base_relevance_score": 1,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 3,
+      "query": "Teknik faul ile kişisel faul arasındaki fark nedir?",
+      "category": "fouls",
+      "difficulty": "medium",
+      "retrieval_time": 0.04640674591064453,
+      "rag_generation_time": 8.112777709960938,
+      "base_generation_time": 1.0736057758331299,
+      "total_rag_time": 8.159184455871582,
+      "total_time": 9.232791900634766,
+      "rag_answer": "Teknik faul ile kişisel faul arasındaki fark, temassız faullerdir. Teknik faul davranışsal nitelikteki temassız faulleri ifade ederken, kişisel faul ise top canlı ya da ölü iken bir oyuncunun rakibine yaptığı kural dışı teması ifade eder.\n\nKaynak 1 - basketbol_oyun_kurallari_2022.txt (2022):\nMadde 34.1.1\nTanım: Kişisel faul, top canlı ya da ölüyken bir oyuncunun rakibine yaptığı kural dışı temastır.\nMadde 34.2.1\nTanım: Teknik faul, davranışsal nitelikteki temassız faulleri ifade eder.\n\nKaynak 3 - basketbol_oyun_kurallari_2022.txt (2022):\nB.8.3.4\nTeknik faul, davranışsal nitelikteki temassız faullerdir.\nMadde 36.2.3 ve Madde 36.2.4\nDiskalifiye edici teknik faul, oyuncuya veya başantrenöre verilebilir.\n\nKaynak 5 - basketbol_oyun_kurallari_2022.txt (2022):\nBir oyuncu ya da bir başantrenör Madde 36.2.3 veya Madde 36.2.4 ‘e göre diskalifiye edilirse, bu teknik faul olarak cezalandırılacak tek faul olacak ve diskalifiyeden dolayı hiçbir ek ceza uygulanmayacaktır.",
+      "base_answer": "Teknik faul, oyuncunun eylemleri nedeniyle hakem tarafından verilen bir ceza türüdür. Kişisel faul ise, rakip oyuncuya fiziksel temas veya müdahalede bulunmak suretiyle yapılan hatalardır.",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "Madde 34\n\nKişisel faul\n\n34.1\n34.1.1\n\nTanım\nKişisel faul, top canlı ya da ölüyken bir oyuncunun rakibine yaptığı kural dışı temastır.\nBir oyuncu elini, kolunu, dirseğini, omuzunu, kalçasını, bacağını, dizini ya da ayağını uzatarak\nveya vücudunu ‘anormal’ bir pozisyona getirerek (silindirinin dışında) rakibini tutmayacak, bloke\netmeyecek, itmeyecek, şarj yapmayacak, çelmelemeyecek ya da ilerlemesini engellemeyecek ve\nde sert ve şiddetli bir şekilde oynamayacaktır.\nTopun oyuna sokulması faulü, dördüncü çeyrekte ve her uzatmada oyun saati 2:00 dakika ya da\ndaha az gösterdiğinde, top oyuna sokulması için saha dışında ve hala hakemin ellerinde veya topu\noyuna sokacak oyuncunun kullanımında olduğunda rakip savunma oyuncusu tarafından yapılan\nkişisel bir fauldür.\n\n34.1.2\n\n34.2\n34.2.1\n\n34.2.2",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "173"
+        },
+        {
+          "content": "Açıklama: Bir faul kişisel, sportmenlik dışı, diskalifiye edici veya teknik faul olabilir. Çift faul olarak kabul\nedilebilmesi için her iki faulün de aynı 2 rakip arasındaki oyuncunun faulü olmalı ve aynı kategoride\nolmalıdır, her ikisi de kişisel faul veya her ikisi de sportmenlik dışı ve diskalifiye edici faullerin herhangi\nbir kombinasyonudur. Takımların, takım faullerine bakılmaksızın serbest atış verilmeyecektir. Çift faul\nfiziksel temas içermelidir, bu nedenle teknik fauller temassız fauller olduğundan çift faulün bir parçası\ndeğildir.\nYaklaşık olarak aynı anda meydana gelen her iki faul de aynı kategoride değilse (kişisel veya sportmenlik\ndışı / diskalifiye edici), bu bir çift faul değildir. Cezaları birbirini götürmez. Kişisel faul her zaman ilk",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "286"
+        },
+        {
+          "content": "B.8.3.1\n\nBir kişisel faul ‘P’ olarak yazılacaktır.\n\nB.8.3.2\n\nBir oyuncuya verilen teknik faul ‘T’ olarak yazılacaktır. İkinci bir teknik faul de ‘T’ olarak\ngösterilecek ve sonrasındaki boşluğa, oyundan diskalifiyeyi belirtmek için ‘GD’ yazılacaktır.\n\nB.8.3.3\n\nSportmenlik dışı kişisel davranışı nedeniyle başantrenöre verilen teknik faul 'C' ile\ngösterilecektir. Benzer bir şekilde verilen ikinci teknik faul de \"C\" ile belirtilecek ve sonrasındaki\nboşluğa ‘GD’ yazılacaktır.\n\nB.8.3.4\n\nBaşka herhangi bir nedenden dolayı başantrenöre verilen teknik faul 'B' ile yazılacaktır. Üçüncü\nbir teknik faul (bunlardan biri \"C\" olabilir) \"B\" veya \"C\" ile girilecek ve sonrasındaki boşluğa ‘GD’\nyazılacaktır.\n\nTemmuz 2023\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n72\n\n\fBASKETBOL OYUN KURALLARI\n\nB.8.3.5",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "275"
+        },
+        {
+          "content": "gelerek teknik faulleri önleyebilir.\nTop canlandıktan sonra bir ihlal fark edilirse, oyun durdurulacak ve bir teknik faul verilecektir.\nCezası, teknik faul verildiği anda olmuş gibi yönetilecektir. İhlalle, oyunun durdurulması\narasındaki geçen süre içerisinde olanlar geçerli kalacaktır.\nTanım\nTeknik faul, aşağıdaki durumlarla sınırlı olmamak üzere bir oyuncunun davranışsal nitelikteki\ntemassız faulüdür:\n• Hakemler tarafından verilen uyarıları dikkate almamak.\n• Hakemler, eğer varsa komiser, masa görevlileri, rakipler veya takım sıralarında oturmalarına\nizin verilen kişilere saygısız bir şekilde davranmak.\n• Seyircileri rahatsız edecek ya da kışkırtabilecek tarzda sözlü ya da el/kol hareketleriyle\ndavranışlarda bulunmak.\n• Rakibini taciz etmek ve rakibine sataşmak.",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "181"
+        },
+        {
+          "content": "Bir oyuncu ya da bir başantrenör Madde 36.2.3 veya Madde 36.2.4 ‘e göre diskalifiye edilirse,\nbu teknik faul olarak cezalandırılacak tek faul olacak ve diskalifiyeden dolayı hiçbir ek ceza\nuygulanmayacaktır.\nCezası\nEğer bir teknik faul:\n• Bir oyuncuya verilirse, teknik faul oyuncunun kendisine bir oyuncu faulü olarak işlenecek ve\ntakım faullerinden biri olarak sayılacaktır.\n• Takım sırasına oturmasına izin verilen herhangi bir kişiye verilirse, teknik faul başantrenöre\nişlenecek ve takım faullerinden biri olarak sayılmayacaktır.\nRakiplere 1 serbest atış verilecektir. Oyun aşağıdaki gibi devam edecektir:\n• Serbest atış hemen yönetilecektir. Serbest atıştan sonra topun oyuna sokulması, teknik faul\nçalındığında topu kontrol eden ya da topu kontrol etme hakkı olan takım tarafından, oyun",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "186"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "rules_2022",
+        "interpretations_2023"
+      ],
+      "retrieved_sources": [
+        "rules",
+        "interpretations"
+      ],
+      "rag_answer_length": 971,
+      "base_answer_length": 188,
+      "rag_citations": 4,
+      "base_citations": 0,
+      "rag_relevance_score": 2,
+      "base_relevance_score": 2,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 4,
+      "query": "2024 yılında hangi kurallar değişti?",
+      "category": "rule_changes",
+      "difficulty": "medium",
+      "retrieval_time": 0.03612709045410156,
+      "rag_generation_time": 3.3640708923339844,
+      "base_generation_time": 6.408541679382324,
+      "total_rag_time": 3.400197982788086,
+      "total_time": 9.808743000030518,
+      "rag_answer": "2024 yılında, 44. madde ile Düzeltilebilir Hata'da yapılan değişikliklerden dolayı oyuna dahil olan tüm katılımcılar için ortak bir ifade oluşturuldu (Kaynak 3 - basketbol_oyun_kurallari_degisiklikleri_2024.txt).\n\nAyrıca, faul kısıtlamaları ve oyundan diskalifiyeler ile ilgili değişikler yapıldı. Bir oyuncu 5 faul yapmışsa oyunu derhal terk edecektir (Kaynak 4 - basketbol_oyun_kurallari_degisiklikleri_2024.txt).",
+      "base_answer": "2024 yılında FIBA, basketbolun geleceğini şekillendirmek için yeni bir dizi kural ve uygulamayı tanıttı. Bu değişikliklerin bazıları:\n\n- 3'lü hücumda, topu kaptırma veya elden kaybetme gibi durumlarda, topun yeniden başlatılması için \"hedefe yakın\" kavramı kaldırıldı.\n- Oyuncuların basketbol topunu elle tutarken, topun elle tutulduğu pozisyonda, topun elle tutulan elin bilekten daha yukarıda olması gerekliliği kaldırıldı.\n- Topu elle tutan oyuncu, topu elle tuttuğu pozisyonda, topun elle tutulan elin bilekten daha aşağıda olması durumunda, topu elle tutan oyuncunun basketbol topunu elle tuttuğunda, topun elle tutulduğu pozisyonda, topun elle tutulan elin bilekten daha yukarıda olması gerekliliği kaldırıldı.\n- Oyuncuların basketbol topunu elle tutarken, topun elle tutulduğu pozisyonda, topun elle tutulan elin bilekten daha aşağıda olması durumunda, topu elle tutan oyuncunun basketbol topunu elle tuttuğunda, topun elle tutulduğu pozisyonda, topun elle tutulan elin bilekten daha yukarıda olması gerekliliği",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "MHK Eğitim @2024\n\n\fKural Değişiklikleri 2024",
+          "source": "basketbol_oyun_kurallari_degisiklikleri_2024.txt",
+          "doc_type": "changes",
+          "year": "2024",
+          "chunk_id": "1"
+        },
+        {
+          "content": "Bu ilkeler OBRI 2024'e (1 Ekim 2024 itibarıyla geçerli) dahil edilecektir.\nAşağıda örnek ve yorumlama ile dört durum açıklanmıştır.",
+          "source": "basketbol_oyun_kurallari_degisiklikleri_2024.txt",
+          "doc_type": "changes",
+          "year": "2024",
+          "chunk_id": "45"
+        },
+        {
+          "content": "Kural Değişiklikleri\n2024\nMHK Eğitim @2024\n\n\fKural Değişiklikleri 2024\n44.Madde, Düzeltilebilir Hata’da yapılan değişikliklerden dolayı oyuna dahil olan tüm katılımcılar için\nortak bir ifade oluşturulmuştur.\nKural Bir – Oyun\nMadde 1.2 (yeni eklendi)\nOyundaki tüm katılımcılar, masa görevlileri varsa teknik delege/komiser ve oynama hakkı bulunan tüm\ntakım üyeleri, başantrenör ve diğer eşlik eden delegasyon üyeleri oyunun düzgün bir şekilde\nyürütülmesinde rol oynamalı ve her zaman etik davranışlar göstermeleri beklenmektedir. Kaydedilen sayı,\nfauller, molalar ve oyun süresi ile şut saati işlemlerinde bir yanlışlık (düzeltilebilir hata) fark etmeleri\nhalinde hataların bu kurallara uygun şekilde düzeltilmesine olanak sağlayacak şekilde hakemlere derhal\nhaber vermeleri beklenmektedir.",
+          "source": "basketbol_oyun_kurallari_degisiklikleri_2024.txt",
+          "doc_type": "changes",
+          "year": "2024",
+          "chunk_id": "0"
+        },
+        {
+          "content": "Kural Değişiklikleri 2024\nEski Tanım\nMadde 40 - Bir oyuncunun 5 faulü\nYeni Tanım\nMadde 40 - Bir oyuncunun faul kısıtlamaları ve oyundan diskalifiyeleri\n40.1 - 5 faul yapmış olan bir oyuncu hakem tarafından bilgilendirilecek ve oyunu derhal terk edecektir.\n40.2 Oyuncu-başantrenör olarak 5 faulünü almış olan bir oyuncu oyun dışı kalmış bir oyuncudur fakat\nbaşantrenör olarak görevine devam edebilir.\n40.3 - Daha önce 5 faul yapmış olan bir oyuncunun yaptığı faul, oyun dışı kalmış oyuncunun faulü olarak\nkabul edilir ve maç kağıdında başantrenöre kaydedilir ('B').\n40.4 - 2 teknik faul veya 2 sportmenlik dışı faul ya da 1 sportmenlik dışı faul ve 1 teknik faul alan oyuncuya\noyundan diskalifiye olduğunun bildirimi, süre görevlisi tarafından oyundan diskalifiye (GD) göstergesi ile\nyapılacaktır.",
+          "source": "basketbol_oyun_kurallari_degisiklikleri_2024.txt",
+          "doc_type": "changes",
+          "year": "2024",
+          "chunk_id": "6"
+        },
+        {
+          "content": "MHK Eğitim @2024",
+          "source": "basketbol_oyun_kurallari_degisiklikleri_2024.txt",
+          "doc_type": "changes",
+          "year": "2024",
+          "chunk_id": "34"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "changes_2024"
+      ],
+      "retrieved_sources": [
+        "changes"
+      ],
+      "rag_answer_length": 415,
+      "base_answer_length": 1018,
+      "rag_citations": 4,
+      "base_citations": 2,
+      "rag_relevance_score": 1,
+      "base_relevance_score": 2,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 5,
+      "query": "Oyuncu değişimi sırasında mola alınabilir mi?",
+      "category": "substitutions",
+      "difficulty": "hard",
+      "retrieval_time": 0.033022403717041016,
+      "rag_generation_time": 2.0233521461486816,
+      "base_generation_time": 0.4079113006591797,
+      "total_rag_time": 2.0563745498657227,
+      "total_time": 2.464287757873535,
+      "rag_answer": "Hayır, oyuncu değişimi sırasında mola alınamaz. (Kaynak 1 - basketbol_oyun_kurallari_resmi_yorumlar_2023.txt (2023), 5-15)\n\nBelge numarası: 5-15",
+      "base_answer": "Hayır, oyuncu değişimi sırasında mola alınamaz.",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "5-15\n\nÖrnek: A1 sakatlanır ve oyun durdurulur. A1, hemen oynamaya devam edemediğinden dolayı hakem bir\ndeğişiklik için bilinen işaretini yaparak düdüğünü çalar.\nİki takımdan birisi bir mola ister:\n(a) A1'le değişecek bir yedek oyuncu oyuna girmeden önce.\n(b) A1'le değişecek bir yedek oyuncu oyuna girdikten sonra.\nMola bitiminde A1, iyileşmiş görülür ve oyunda kalmak ister.\nYorum:\n(a) Eğer A1, mola sırasında iyileşirse oynamaya devam edebilir.\n(b) A1’in yerine bir yedek oyuncu oyuna girmiştir bu nedenle A1, bir sonraki oyun saatinin çalışma\nperiyodu bitene kadar tekrar giremez.\n\n5-16",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "23"
+        },
+        {
+          "content": "18/19-1 Açıklama: Bir çeyrek ya da uzatma için oyun süresinin başlamasından önce veya bir çeyrek ya da\nuzatma için oyun süresinin bitmesinden sonra bir mola verilemez.\nBirinci çeyrek için oyun süresinin başlamasından önce ya da maç için oyun süresinin bitmesinden sonra\nbir oyuncu değişikliği yapılamaz. Çeyrekler ve uzatmalar arasındaki oyun araları sırasında herhangi bir\noyuncu değişikliği yapılabilir.\n18/19-2 Örnek: Top, oyunun başlangıcında hava atışında başhakemin ellerini terk ettikten sonra ancak, kurallara\nuygun olarak tiplenmeden önce hava atışına sıçrayan A2 bir ihlal yapar. Topu oyuna sokması için B\ntakımına verilir. Bu sırada herhangi bir takım mola ya da oyuncu değişikliği ister.\nYorum: Oyun başlamış olmasına rağmen oyun saati henüz çalışmadığından, mola ya da oyuncu",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "140"
+        },
+        {
+          "content": "rakiplerine de bir mola verilebilir ve eğer isterlerse her iki takıma da oyuncu değişikliği fırsatı\nverilebilir.\n(b) Bu durum sadece, dördüncü çeyrekte ve her uzatmada oyun saati 2:00 dakika ya da daha az\ngösterdiğinde sadece sayı yiyen takım için bir oyuncu değişikliği fırsatıdır. Sayı yiyen takıma\noyuncu değişikliği hakkı verilirse rakiplerine de oyuncu değişikliği fırsatı verilebilir ve eğer\nisterlerse her iki takıma da mola verilebilir.\n18/19- 5",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "142"
+        },
+        {
+          "content": "Bir mola sırasında ya da devre arası hariç bir oyun arasında oyuncu değişikliği isteğinde\nbulunulursa, yedek oyuncu oyuna girmeden önce bunu süre görevlisine bildirmelidir.\n\n19.3.8\n\nSerbest atışı atacak oyuncu aşağıdakilerden dolayı değiştirilmek zorundaysa:\n•\n•\n•\n\nSakatlandıysa, veya\n5 faul yaptıysa, veya\nDiskalifiye edildiyse,\n\nserbest atış ya da atışlar oyunun bir sonraki oyun saatinin çalışma periyoduna kadar tekrar\ndeğiştirilemeyecek olan yedeği tarafından atılmalıdır.\n19.3.9\n\nOyuncu değişikliği isteği ilk serbest atış için top, serbest atışı atacak oyuncunun kullanımında\nolduktan sonra herhangi bir takım tarafından yapılırsa, oyuncu değişikliği aşağıdaki durumlarda\nverilecektir:\n•\n•\n•\n\n•\n•",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "91"
+        },
+        {
+          "content": "Haziran 2023-v3.0a\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n6\n\n\fRESMİ YORUMLAR\n\n5-14\n\nAçıklama: Bir oyuncu sakatlanır ya da kanaması veya açık yarası olur ve oyuna hemen\n(yaklaşık 15saniye içinde) devam edemezse, ya da takım sıra bölgesinde oturmasına izin verilen\nherhangi biri tarafından kendisine yardım edilmişse, değiştirilmelidir. Aynı duran saat periyodunda\ntakımlardan birisine bir mola verilirse ve bu mola sırasında bu oyuncu iyileşirse ya da yardım\ntamamlanırsa sayı görevlisi mola için sesli işaretini, hakemin bir yedek oyuncuyu, bir oyuncu olması\niçin çağırmasından önce verirse, oyuna devam edebilir.\n\n5-15",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "22"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "rules_2022",
+        "interpretations_2023"
+      ],
+      "retrieved_sources": [
+        "rules",
+        "interpretations"
+      ],
+      "rag_answer_length": 144,
+      "base_answer_length": 47,
+      "rag_citations": 4,
+      "base_citations": 0,
+      "rag_relevance_score": 0,
+      "base_relevance_score": 0,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 6,
+      "query": "Basketbol sahasının boyutları nelerdir?",
+      "category": "court_specifications",
+      "difficulty": "easy",
+      "retrieval_time": 0.06949114799499512,
+      "rag_generation_time": 4.846632957458496,
+      "base_generation_time": 0.4956247806549072,
+      "total_rag_time": 4.916124105453491,
+      "total_time": 5.411752939224243,
+      "rag_answer": "Saha (Diyagram 1) düz, engelsiz sert yüzeyli, sınır çizgisinin iç kenarından ölçüldüğünde 28 m uzunluğunda, 15 m genişliğinde olacaktır. (Kaynak 1 - basketbol_oyun_kurallari_2022.txt (2022), Madde 2.1)\n\nZemin, engellerden arındırılmış en az 2 m'lik başka bir ilave sınır çizgisi ile çevrili saha alanını içerecektir (Diyagram 2). Bu nedenle zemin en az 32 m uzunluğunda ve 19 m genişliğinde olmalıdır. (Kaynak 1 - basketbol_oyun_kurallari_2022.txt (2022), Madde 2.2)",
+      "base_answer": "Basketbol sahalarının uzunluğu 28 metredir, genişliği ise 15 metredir.",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "1.3\n\nMaçın galibi\nOyun süresinin sonunda daha fazla sayı yapmış olan takım, maçın galibi olacaktır.\n\nTemmuz 2023\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n4\n\n\fBASKETBOL OYUN KURALLARI\n\nKURAL İKİ – SAHA ve DONANIM\nMadde 2\n\nSaha\n\n2.1\n\nSaha\nSaha (Diyagram 1) düz, engelsiz sert yüzeyli, sınır çizgisinin iç kenarından ölçüldüğünde 28 m\nuzunluğunda, 15 m genişliğinde olacaktır.\n\n2.2\n\nZemin\nZemin, engellerden arındırılmış en az 2 m'lik başka bir ilave sınır çizgisi ile çevrili saha alanını\niçerecektir (Diyagram 2). Bu nedenle zemin en az 32 m uzunluğunda ve 19 m genişliğinde\nolmalıdır.\n\n2.3\n\nGeri saha\nBir takımın geri sahası, kendi sepetini, arkalığın iç tarafını ve takımın kendi sepetinin arkasındaki\ndip çizgiyle sınırlı olan sahası ile kenar çizgiler ve orta çizgiyi içerir.\n\n2.4",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "13"
+        },
+        {
+          "content": "TÜRKİYE BASKETBOL FEDERASYONU\n\n7\n\n\fBASKETBOL OYUN KURALLARI\n\n2.5.5\n\nTakım sıra bölgeleri\nTakım sıra bölgeleri Diyagram 1’de gösterildiği gibi sahanın dışında, 2 çizgi ile sınırlı olarak\nişaretlenecektir.\nHer takım sıra bölgesinde başantrenör, antrenör yardımcıları, yedek oyuncular, oyun dışı\noyuncular ve delegasyon üyeleri için16 oturma yeri bulunmalıdır. Diğer kişiler takım sırasının\nen az 2 m arkasında olacaktır.\n\n2.5.6\n\nTopu oyuna sokma çizgileri\nHakem masasının karşısındaki kenar çizgiye, çizgilerin dış kenarı en yakın dip çizginin iç kenarına\n8.325 m olan, 0.15 m uzunluğunda 2 çizgi çizilecektir.\n\n2.5.7\n\nŞarjsız yarım daire alanları\nŞarjsız yarım daire alanları sahaya aşağıdakilerle sınırlı olarak çizilecektir.\n•\n•",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "19"
+        },
+        {
+          "content": "Silindir prensibi\nSilindir prensibi, sahadaki bir oyuncunun işgal ettiği hayali bir silindirin içindeki boşluk olarak\ntanımlanır. Bu boyutlar ve oyuncunun ayakları arasındaki mesafe, oyuncunun boyuna ve\noyuncunun boyutuna göre değişecektir ve bu boyutlar oyuncunun üzerindeki boşluğu da içerir.\nSavunma oyuncusunun veya topsuz hücum oyuncusunun silindirinin sınırları aşağıda belirtilenler\nile kısıtlanmıştır:\n• Önde ellerin avuç içleri,\n• Arkada kalça, ve\n• Yanlarda kolların ve bacakların dış kenarları.\nEller ve kollar, kurallara uygun savunma pozisyonunda, dirseklerden bükülü olarak kaldırılmış\nbir şekilde, ayakların ve dizlerin konumundan daha fazla olmamak üzere gövdenin önüne\nuzatılabilir.\nHücum oyuncusu kendi silindiri içerisinde normal basketbol bir oynamaya teşebbüs ederken",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "143"
+        },
+        {
+          "content": "2.5.2\n\nOrta çizgi, orta daire ve serbest atış yarım daireleri\nOrta çizgi, kenar çizgilerin orta noktasından, dip çizgilere paralel çizilecektir. Her kenar çizginin\n0.15 m ötesine uzayacaktır. Orta çizgi geri sahanın parçasıdır. Orta daire, sahanın ortasına\nçizilecek ve yarıçapı, dairenin dış kenarından ölçüldüğünde 1.80 m olacaktır. Serbest atış yarım\ndaireleri sahaya, yarıçapı, dış kenarından ve serbest atış çizgilerinin orta noktasındaki\nmerkezlerinden ölçüldüğünde 1.80 m çizilecektir (Diyagram 3).\n\nTemmuz 2023\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n5\n\n\fBASKETBOL OYUN KURALLARI\n\nDiyagram 1\n\nTemmuz 2023\n\nSahanın tam boyutları\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n6\n\n\fBASKETBOL OYUN KURALLARI\n\nDiyagram 2\n2.5.3\n\nSaha ve Zemin",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "15"
+        },
+        {
+          "content": "Hücum oyuncusu kendi silindiri içerisinde normal basketbol bir oynamaya teşebbüs ederken\nsavunma oyuncusu, kendisinde top olan hücum oyuncusunun silindirine giremez ve kural dışı bir\ntemasa neden olamaz. Toplu hücum oyuncusunun silindirinin ölçüleri şu şekildedir.\n• Önde ayaklar, bükülmüş dizler ve kollar, kalçalarının üzerinde topu tutarken,\n• Arkada kalça, ve\n• Yanlarda dirseklerin ve bacakların dış kenarları.\nTopa sahip olan hücum oyuncusu kendi silindiri içerisinde normal bir basketbol oyunu için yeterli\nalana sahip olmalıdır. Normal basketbol oyunu, driplinge başlamayı, pivot hareketini, şut atmayı\nve pas vermeyi içermektedir.\nHücum oyuncusu, bacaklarını ve kollarını kendi silindirinin dışına açamaz ve ek bir alan\nkazanmak için savunma oyuncusuna kural dışı bir temasa neden olamaz.",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "144"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "rules_2022"
+      ],
+      "retrieved_sources": [
+        "rules"
+      ],
+      "rag_answer_length": 466,
+      "base_answer_length": 70,
+      "rag_citations": 4,
+      "base_citations": 0,
+      "rag_relevance_score": 1,
+      "base_relevance_score": 1,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 7,
+      "query": "Üçlük çizgisi mesafesi ne kadardır?",
+      "category": "court_specifications",
+      "difficulty": "easy",
+      "retrieval_time": 0.03589653968811035,
+      "rag_generation_time": 5.893671274185181,
+      "base_generation_time": 0.37128567695617676,
+      "total_rag_time": 5.929567813873291,
+      "total_time": 6.300854682922363,
+      "rag_answer": "Üçlük çizgisi mesafesi 6.75 m'dir (Kaynak 1 - basketbol_oyun_kurallari_2022.txt (2022), 2.5.4)\n\nDış kenarı, kenar çizgilerin iç kenarından 0.90 m olan, dip çizgiden ve dip çizgiye dik 2 paralel\nçizgi.\nRakibin sepetinin tam merkezinin altındaki zemin üzerindeki noktadan yayın dış kenarına\n6.75 m yarıçaplı bir yay.",
+      "base_answer": "Cevap: 23,75 feet (7,24 metre)",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "2.5.4\n\n3 sayı bölgesi\nTakımın 3 sayı bölgesi (Diyagram 1 ve Diyagram 4), rakibin sepetine yakın olan bölge hariç,\nsınırları aşağıda belirtilen saha alanını içeren bölümü kapsar.\n•\n•\n\nTemmuz 2023\n\nDış kenarı, kenar çizgilerin iç kenarından 0.90 m olan, dip çizgiden ve dip çizgiye dik 2 paralel\nçizgi.\nRakibin sepetinin tam merkezinin altındaki zemin üzerindeki noktadan yayın dış kenarına\n6.75 m yarıçaplı bir yay. Dip çizginin orta noktasının yakın kenarından sahada alanındaki\nnoktaya olan uzaklık 1.575 m dir. Yay, paralel çizgilerle birleştirilir.\n2 sayı çizgisi, 3 sayı bölgesinin parçası değildir.\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n7\n\n\fBASKETBOL OYUN KURALLARI\n\n2.5.5",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "18"
+        },
+        {
+          "content": "Serbest atış çizgileri ve kısıtlamalı alanlar, serbest atış ribaunt yerleri\nSerbest atış çizgisi her dip çizgiye paralel çizilecektir. En uzak kenarı, dip çizginin iç kenarından\n5.80 m uzaklıkta ve 3.60 m uzunluğunda olacaktır. Orta noktası 2 dip çizginin orta noktasını\nbirleştiren hayali çizgi üzerinde olacaktır.\nKısıtlamalı alanlar sahaya çizilmiş dip çizgilerle, uzatılmış serbest atış çizgileri ve dip çizgilerde\nbaşlayan çizgilerle sınırlı, dış kenarları dip çizgilerin orta noktasından 2.45 m ve uzatılmış serbest\natış çizgisinin dış kenarlarında sona eren dikdörtgen alanlar olacaktır. Bu çizgiler dip çizgiler\nhariç, kısıtlamalı alanın parçasıdır.\nSerbest atışlar sırasında oyunculara ayrılan kısıtlamalı alanların kenarlarındaki serbest atış",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "16"
+        },
+        {
+          "content": "2.5.2\n\nOrta çizgi, orta daire ve serbest atış yarım daireleri\nOrta çizgi, kenar çizgilerin orta noktasından, dip çizgilere paralel çizilecektir. Her kenar çizginin\n0.15 m ötesine uzayacaktır. Orta çizgi geri sahanın parçasıdır. Orta daire, sahanın ortasına\nçizilecek ve yarıçapı, dairenin dış kenarından ölçüldüğünde 1.80 m olacaktır. Serbest atış yarım\ndaireleri sahaya, yarıçapı, dış kenarından ve serbest atış çizgilerinin orta noktasındaki\nmerkezlerinden ölçüldüğünde 1.80 m çizilecektir (Diyagram 3).\n\nTemmuz 2023\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n5\n\n\fBASKETBOL OYUN KURALLARI\n\nDiyagram 1\n\nTemmuz 2023\n\nSahanın tam boyutları\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n6\n\n\fBASKETBOL OYUN KURALLARI\n\nDiyagram 2\n2.5.3\n\nSaha ve Zemin",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "15"
+        },
+        {
+          "content": "2.4\n\nÖn saha\nBir takımın ön sahası rakibinin sepetini, arkalığın iç tarafını ve rakibinin sepetinin arkasındaki dip\nçizgiyle sınırlı olan sahası ile kenar çizgiler ve orta çizginin rakibinin sepetine yakın olan iç\nkenarını içerir.\n\n2.5\n\nÇizgiler\nTüm çizgiler aynı renk ve beyaz ya da diğer kontrast renklerde, 5 cm genişliğinde ve açıkça\ngörülebilir çizilecektir.\n\n2.5.1\n\nSınır çizgisi\nSaha, dip çizgileri ve kenar çizgileri içeren bir sınır çizgisiyle sınırlandırılacaktır. Bu çizgiler\nsahanın parçası değildir.\nTakım sırasında oturan başantrenör, birinci yardımcı antrenör, yedek oyuncular, oyun dışı\noyuncular ve delegasyon üyeleri dahil herhangi bir engel, sahadan en az 2 m uzaklıkta olacaktır.\n\n2.5.2",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "14"
+        },
+        {
+          "content": "uymadığında.\nPerdeleme, hareketsiz duran bir rakibin görüş alanı içinde yapılırsa (önden ya da yandan),\nperdeleme yapan oyuncu, temas olmaması koşuluyla rakibine istediği kadar yaklaşabilir.\nPerdeleme, hareketsiz duran bir rakibin görüş alanı dışında yapılırsa, perdeleme yapan oyuncu\nrakibine temas olmadan perdelemeye doğru 1 normal adım atma izin vermelidir.\nEğer rakip hareket halindeyse, zaman ve uzaklık faktörleri uygulanacaktır. Perdeleme yapan\noyuncu, rakibinin durarak ya da yön değiştirerek perdelemeden kurtulmasına olanak verecek\nkadar yeterli mesafe bırakmalıdır.\nGerekli mesafe asla 1 normal adımdan az ve 2 normal adımdan fazla değildir.\nKurallara uygun olarak perdeleme yapılan oyuncu, perdeleme yapan oyuncuya yapacağı\ntemaslardan sorumludur.",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "160"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "rules_2022"
+      ],
+      "retrieved_sources": [
+        "rules"
+      ],
+      "rag_answer_length": 314,
+      "base_answer_length": 30,
+      "rag_citations": 3,
+      "base_citations": 0,
+      "rag_relevance_score": 1,
+      "base_relevance_score": 0,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 8,
+      "query": "Hangi durumda oyun uzatmaya gider?",
+      "category": "game_flow",
+      "difficulty": "medium",
+      "retrieval_time": 0.040767669677734375,
+      "rag_generation_time": 5.310095548629761,
+      "base_generation_time": 1.0320780277252197,
+      "total_rag_time": 5.350863218307495,
+      "total_time": 6.382943391799927,
+      "rag_answer": "Dördüncü çeyrekte skor eşitse oyun uzatmaya gider. (Kaynak 2 - basketbol_oyun_kurallari_2022.txt (2022), Madde 8)\n\n8.5, 8.6 ve 8.7 maddeleri oyun arası başlama ve bitme durumlarını açıklamaktadır.\n\nDördüncü çeyrekte skor eşitse oyun uzatmalarla devam edecektir. (Kaynak 2 - basketbol_oyun_kurallari_2022.txt (2022), Madde 8)\n\nİçerde ve dışarıda 2 maçlı toplam sayı serili yarışma sisteminde, iki maçın toplam skoru 2. maçın sonunda eşitse bu maç uzatmalarla devam edecektir. (Kaynak 2 - basketbol_oyun_kurallari_2022.txt (2022), Madde 8)",
+      "base_answer": "Oyunun normal süresi bittikten sonra, iki takım da aynı sayıda puanla eşit ise ve de maçın normal süresi bitiminde eşitlik bozulmamışsa, maça uzatma devresi eklenir.",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "Takımlar ikinci devrede, ısınmak için kullandıkları yarı sahalarını ve sepetlerini değiştireceklerdir.\n\nTemmuz 2023\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n16\n\n\fBASKETBOL OYUN KURALLARI\n\n9.6\n\nTüm uzatmalarda takımlar, dördüncü çeyrekteki aynı sepetlere doğru oynamaya devam\nedeceklerdir.\n\n9.7\n\nBir çeyrek, uzatma ya da oyun, oyun saati çeyreğin ya da uzatmanın sonu için sesli işaret\nverdiğinde sona erecektir. Arkalığın çevresi kırmızı ışıkla donatıldığında ışık, oyun saatinin sesli\nişaretinden öncelikli olacaktır.",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "45"
+        },
+        {
+          "content": "8.5\n\nOyun arası şu durumlarda başlar:\n•\n•\n\n8.6\n\nOyun arası şu durumlarda sona erer:\n•\n•\n\n8.7\n\nOyunun belirlenmiş başlama saatinden 20 dakika önce\nOyun saati çeyreğin ya da uzatmanın sonu için sesli işaret verdiğinde\nBirinci çeyreğin başındaki hava atışında top, başhakemin el ya da ellerini terk ettiğinde\nDiğer tüm çeyreklerin ve uzatmanın başında top, oyuna sokacak oyuncunun kullanımında\nolduğunda\n\nDördüncü çeyrek sonunda skor eşitse oyun, eşitlik bozulana kadar her biri 5 dakika süren\nuzatmalarla devam edecektir.\nİçerde ve dışarıda 2 maçlı toplam sayı serili yarışma sisteminde, iki maçın toplam skoru 2. maçın\nsonunda eşitse bu maç, eşitlik bozuluncaya kadar her biri 5 dakika süren uzatmalarla devam\nedecektir.\n\n8.8",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "42"
+        },
+        {
+          "content": "Oyun saati dördüncü çeyrekte ya da her uzatmada 2:00 dakika ya da daha az gösterdiğinde ve\ntopun oyuna sokulması durumu olduğunda hakem topun oyuna sokulmasını yönetirken, bir uyarı\nolarak, sınır çizgisini kural dışı geçme işaretini gösterecektir.\n•\n•\n\nEğer bir savunma oyuncusu:\nTopun oyuna sokulmasını engellemek için vücudunun herhangi bir bölümünü sınır çizgisi\nüzerine hareket ettirir, ya da\nTopu oyuna sokma yeri 2 m uzaklıktan daha az olduğunda, topu oyuna sokacak olan\noyuncuya 1 m den daha yakınsa,\nbu bir ihlaldir ve bir teknik faulle sonuçlanacaktır.",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "76"
+        },
+        {
+          "content": "Madde 8\n8-1\n\nAçıklama: Oyun arası şu durumlarda başlar:\n•\n•\n•\n\n8-2\n\nOyun süresi, eşitlik ve uzatma\n\nOyunun belirlenmiş başlama saatinden 20 dakika önce.\nOyun saati, çeyreğin ya da uzatmanın sonu için sesli işaret verdiğinde.\nArkalığın çevresi kırmızı ışıkla donatıldığında ışık, oyun saatinin sesli işaretinden öncelikli olacaktır.",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "31"
+        },
+        {
+          "content": "Açıklama: Oyun saati dördüncü çeyrekte ya da her uzatmada 2:00 dakika veya daha az gösterdiğinde, geri\nsahasında topa sahip olma hakkı olan takıma bir mola verilirse, mola sonrasında başantrenör, topun oyuna\nsokulmasının takımının ön sahasındaki topu oyuna sokma çizgisinden ya da takımının geri sahasından\nyönetileceğine karar verme hakkına sahiptir.\nBaşantrenör kararını verdikten sonra bu kesindir ve geri alınamaz. Aynı duran saat periyodundaki diğer\nmolalar sonrasında iki takımın topun oyuna sokulması yerinin değiştirilmesi istekleri, orijinal kararın\ndeğişmesine yol açmayacaktır.\nBir sportmenlik dışı veya diskalifiye edici faul ya da kavga durumunu takip eden bir mola sonrasında oyun,\ntakımın ön sahasındaki topu oyuna sokma çizgisinden topun oyuna sokulmasıyla devam edecektir.",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "98"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "rules_2022"
+      ],
+      "retrieved_sources": [
+        "rules",
+        "interpretations"
+      ],
+      "rag_answer_length": 537,
+      "base_answer_length": 165,
+      "rag_citations": 4,
+      "base_citations": 0,
+      "rag_relevance_score": 2,
+      "base_relevance_score": 3,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 9,
+      "query": "Hakem kararlarına itiraz edilebilir mi?",
+      "category": "officiating",
+      "difficulty": "hard",
+      "retrieval_time": 0.03891324996948242,
+      "rag_generation_time": 4.49719762802124,
+      "base_generation_time": 0.2779092788696289,
+      "total_rag_time": 4.536110877990723,
+      "total_time": 4.814021587371826,
+      "rag_answer": "Hakem kararlarına itiraz edilebilir. (Kaynak 1 - basketbol_oyun_kurallari_degisiklikleri_2024.txt, C.1)\n\nİtiraz nedenleri, oyunun bitiminden en geç 15 dakika sonra kaptan tarafından başhakeme bildirilecek ve maç kağıdındaki “İtiraz durumunda kaptanın imzası” bölümü imzalanacaktır. (Kaynak 2 - basketbol_oyun_kurallari_2022.txt, a)\n\nTakım, oyunun bitiminden en geç 1 saat sonra itiraz nedenlerini başhakeme yazılı olarak sunacaktır. (Kaynak 2 - basketbol_oyun_kurallari_2022.txt, b)",
+      "base_answer": "Hakem kararlarına itiraz edilemez.",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "Kural Değişiklikleri 2024\nEK BÖLÜM C – İTİRAZ PROSEDÜRÜ\nC.1 - Bir takım, çıkarları aşağıdakilerden dolayı olumsuz olarak etkilenmişse, itirazda bulunabilir:\na) Hakemlerin bu kurallarda belirtildiği şekilde düzeltme yetkisine sahip olduğu ve Madde 44 düzeltilebilir\nhatalarda tanımlanan maddeler içerisinde olan düzeltilmeyen sayı, süre ve şut saati operasyonları hatası\nolduğunda ve hatayı düzeltme kararının verildiği sırada mevcut hatayı doğrulanabilir kanıtlara erişim\nsağlanmasına rağmen bunu düzeltemedikleri durumlarda.\nb) Hükmen yenilgi, maçın iptali, ertelenmesi, devam etmemesi ya da oynanmaması kararı.\nc) Geçerli statüye uygunluk kurallarının ihlali.\nC.3 - Başhakem (veya eğer varsa, komiser) protesto nedenlerini aldıktan sonra, itiraza neden olan olayı FIBA",
+          "source": "basketbol_oyun_kurallari_degisiklikleri_2024.txt",
+          "doc_type": "changes",
+          "year": "2024",
+          "chunk_id": "32"
+        },
+        {
+          "content": "Bir itirazın kabul edilebilir olması için aşağıdaki prosedüre uygun olması gerekir:\na)\nBu takımın kaptanı (CAP), oyunun bitiminden en geç 15 dakika sonra, takımının oyunun\nsonucuna itiraz ettiğini başhakeme bildirecek ve maç kağıdındaki “İtiraz durumunda\nkaptanın imzası” bölümünü imzalayacaktır.\nb)\nTakım, oyunun bitiminden en geç 1 saat sonra itiraz nedenlerini başhakeme yazılı olarak\nsunacaktır.\nc)\nHer itiraz için 1.500 İsviçre Frangı (CHF) ücret uygulanır ve itirazın reddedilmesi halinde\nödenir.\nBaşhakem (veya eğer varsa, komiser) protesto nedenlerini aldıktan sonra, itiraza neden olan olayı\nFIBA temsilcisine ya da yetkili birime yazılı olarak bildirecektir.\nYetkili birim, uygun gördüğü herhangi bir yöntemsel taleplerde bulunacak ve itiraz hakkında derhal",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "298"
+        },
+        {
+          "content": "sonra oyun durdurulduğunda yapılmalıdır.\nEğer oyun durmadan devam ederse hakemlerin başantrenörün itiraz hakkı talebini fark\nettiklerinde hiçbir takımı dezavantajlı duruma düşürmeden oyunu durdurmaya yetkileri\nvardır.\nBaşantrenör, gözden geçirilmesini istediği durumu en yakındaki hakeme bildirecektir.\nHakem 58 numaralı işareti göstererek başantrenörün itiraz hakkının kabul edildiğini sayı\ngörevlisine belirtecektir.\nİnceleme sırasında oyuncular sahada kalacaktır.\nİnceleme, itiraz edilen kararın talepte bulunan takımın lehinde olduğunu gösteriyorsa, ilk\nkarar geçerli olmayacaktır.\nİnceleme, itiraz edilen kararın talepte bulunan takımın lehine olmadığını gösteriyorsa, ilk\nkarar geçerli olarak kalacaktır\nHakemler, inceleme kuralındaki prosedürün aynısını kullanacaktır.",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "349"
+        },
+        {
+          "content": "47.4\n\nTakımlardan biri tarafından bir itiraz yapılırsa, başhakem (veya eğer varsa, komiser) itiraz\nnedenlerini aldıktan sonra olayı yazılı olarak yarışmanın organizasyon birimine bildirecektir.\n\n47.5\n\nBir hakem sakatlanırsa ya da başka herhangi bir nedenle, olaydan sonraki 5 dakika içinde görevini\nyerine getirmeye devam edemezse, oyun devam edecektir. Aynı nitelikteki bir hakemin,\nsakatlanan hakemin yerine geçme olasılığı bulunmadıkça, kalan hakem ya da hakemler, oyunun\ndevamını tek başına yönetecektir. Eğer varsa, komiser ile görüştükten sonra, kalan hakem ya da\nhakemler olası değişiklik için karar verecektir.\n\n47.6\n\nTüm uluslararası müsabakalarda, bir kararın açıklığa kavuşturulması için sözlü iletişim gerekliyse,\nİngilizce dilinde yapılacaktır.\n\n47.7",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "238"
+        },
+        {
+          "content": "Diyagram 15 Maç kağıdının alt kısmı\nB.13\n\nBaşantrenörlerin İtiraz Hakkı (Challenge)\n\nB.13.1\n\nAnlık Tekrar Sistemi kullanılan maçlarda her takım için 1 kere Başantrenör Tekrar İzleme hakkı\nbulunmaktadır. Eğer bu hak kullanılırsa maç kağıdında takım adının bulunduğu bölümün altındaki\n“Başantrenör Challenge” kutularına yazılacaktır. Sayı görevlisi ilk kutuya çeyreği veya uzatmayı\n(Ç1, Ç2, Ç3, Ç4 veya U) ve ikinci kutuya çeyreğin veya uzatmanın oyun süresinin dakikasını\ngirecektir.\n\nTemmuz 2023\n\nTÜRKİYE BASKETBOL FEDERASYONU\n\n78\n\n\fBASKETBOL OYUN KURALLARI\n\nEK BÖLÜM C – İTİRAZ PROSEDÜRÜ\nC.1\n\nBir takım, çıkarları aşağıdakilerden dolayı olumsuz olarak etkilenmişse, itirazda bulunabilir:\na)\nb)\nc)\n\nC.2\n\nC.3\nC.4\n\nC.5\n\nC.6",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "296"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "rules_2022",
+        "interpretations_2023"
+      ],
+      "retrieved_sources": [
+        "rules",
+        "changes"
+      ],
+      "rag_answer_length": 482,
+      "base_answer_length": 34,
+      "rag_citations": 4,
+      "base_citations": 0,
+      "rag_relevance_score": 0,
+      "base_relevance_score": 0,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    },
+    {
+      "query_id": 10,
+      "query": "Video hakem sistemi ne zaman kullanılır?",
+      "category": "technology",
+      "difficulty": "hard",
+      "retrieval_time": 0.05530905723571777,
+      "rag_generation_time": 2.279980182647705,
+      "base_generation_time": 0.6073932647705078,
+      "total_rag_time": 2.335289239883423,
+      "total_time": 2.942685127258301,
+      "rag_answer": "Video hakem sistemi, oyunun herhangi bir anında veya herhangi bir şiddet eylemi sırasında oyuncuların katılımını belirlemek için kullanılır. (Kaynak 2 - basketbol_oyun_kurallari_resmi_yorumlar_2023.txt)\n\nBelge numarası: F-3.3.17",
+      "base_answer": "Video hakem sistemi, maçın normal akışını bozmayacak şekilde ve hakemlerin görüşüne katkıda bulunacak şekilde kullanılır.",
+      "retrieved_docs": 5,
+      "search_results": [
+        {
+          "content": "Başhakem, varsa maçtan önce Anlık Tekrar Sistemi donanımını onaylayacaktır.\nBaşhakem, Anlık Tekrar Sistemi incelemesinin kullanılıp kullanılmayacağına karar verir.\nHakemlerin bir kararı Anlık Tekrar Sistemi incelemesine dahil ise ilk karar, hakemler tarafından\nsahada gösterilmelidir.\nDiğer hakemlerden, masa görevlilerinden, komiserden tüm bilgileri topladıktan sonra\ninceleme, mümkün olduğu kadar hızlı başlamalıdır.\nBaşhakem ve en az 1 hakem (kararı veren) incelemeye katılacaktır. Kararı veren başhakemse,\ninceleme için kendisine eşlik etmesi için yardımcı hakemlerden birisini seçecektir.\nAnlık Tekrar Sistemi incelemesi sırasında başhakem, yetkisiz kişilerin monitöre erişmemesini\nsağlayacaktır.\nİnceleme, molalar ya da oyuncu değişiklikleri kullandırılmadan, oyun arası başlamadan ya da",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "337"
+        },
+        {
+          "content": "bilgilendirecektir.\nF-3.3.17 Örnek: İki rakip, saldırgan bir tavırla konuşmaya ve hafifçe birbirlerini itmeye başlarlar. Hakemler oyunu\ndurdururlar. Hakemler oyun sahasındaki düzeni tekrar sağladıktan sonra olaya karışan oyunculardan\nemin değillerdir.\nYorum: Düzen yeniden sağlandıktan sonra hakemler Anlık Tekrar Sistemi incelemesini oyunun herhangi\nbir anında, herhangi bir şiddet eylemi sırasında oyuncuların katılımını belirlemek için kullanabilirler.\nKavganın açık ve kesin kanıtlarını topladıktan sonra başhakem son kararını hakem masası önünde\nbildirecek ve her iki başantrenörü de bilgilendirecektir.\nF-3.3.18 Örnek: Hakemler B1’e bir faul verirler. Hakemler, hakem masasında faulü bildirmeden önce, faul",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "504"
+        },
+        {
+          "content": "F-1.2\n\nÖrnek: A1’in sahadan sayı amacıyla şut girişimi başarılıdır, bu sırada oyun saati oyunun sonu için sesli\nişaretini verir. Onaylanmış bir Anlık Tekrar Sistemi donanımı mevcut değildir. B takımı menajeri, maçı\ntakımının video kamerasıyla yüksek bir konumdan kaydettiklerini belirtir ve video görüntüsünü inceleme\niçin hakemlere sunar.\nYorum: B takımı menajerinin Anlık Tekrar Sistemi incelemesi için takımının videosunu kullanma isteği\nreddedilecektir.\n\nF-2\n\nGenel prensipler\n\nF-2.1\n\nAçıklama: Bir çeyreğin veya uzatmanın sonunda Anında Tekrar Sistemi incelemesi olması durumunda\nhakemler her iki takımı da sahada tutacaktır. Çeyrekler veya uzatmadan önceki oyun arası ancak hakem\nnihai kararı bildirdikten sonra başlayacaktır.\n\nF-2.2",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "427"
+        },
+        {
+          "content": "Sahadan yapılan başarılı bir atışın, şut saatinin sesli işaretinden önce elden çıkıp çıkmadığı\nHakemler, sahadan yapılmış başarılı bir atışın şut saatinin sesli işaretinden önce elden\nçıkıp çıkmadığını belirlemek için oyunu derhal durdurmaya yetkilidir.\nHakemler, Anlık Tekrar Sistemi incelemesi ihtiyacını belirlemeli ve inceleme, başarılı bir\natıştan sonra hakemler tarafından herhangi bir nedenle oyunu ilk kez durdurduklarında\nyapılmalıdır.\nEğer bir atış durumunun uzağında bir faul meydana gelirse. Bu durumda;\nOyun ya da şut saati süresinin sona erip ermediğine,\nŞut atan oyuncuya rakibi tarafından faul yapıldığında atış hali durumunun başlayıp\nbaşlamadığına,\nŞut atan oyuncunun takım arkadaşı tarafından faul yapıldığında topun hala şut atan\noyuncunun el ya da ellerinde olup olmadığına",
+          "source": "basketbol_oyun_kurallari_2022.txt",
+          "doc_type": "rules",
+          "year": "2022",
+          "chunk_id": "342"
+        },
+        {
+          "content": "çalındıktan sonra sahada bir şiddet eyleminin meydana gelip gelmediğinden emin değillerdir\nYorum: Anlık Tekrar Sistemi incelemesi oyun sırasında herhangi bir zamanda oyuncuların herhangi bir\nşiddet eylemine katılıp katılmadıklarını belirlemek için kullanılabilir. Hakemler faulü hakem masasına\nbildirmeden önce incelemeyi yapabilirler.\nİncelemede şiddet eylemlerinin gerçekleştiği tespit edilirse, hakem B1'in faulünü ve ardından şiddet\neylemini bildirecek ve oyun verilecek cezalarla devam edecektir.",
+          "source": "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt",
+          "doc_type": "interpretations",
+          "year": "2023",
+          "chunk_id": "505"
+        }
+      ],
+      "source_coverage": 0.0,
+      "sources_found": 5,
+      "expected_sources": [
+        "changes_2024",
+        "interpretations_2023"
+      ],
+      "retrieved_sources": [
+        "rules",
+        "interpretations"
+      ],
+      "rag_answer_length": 228,
+      "base_answer_length": 121,
+      "rag_citations": 4,
+      "base_citations": 0,
+      "rag_relevance_score": 0,
+      "base_relevance_score": 0,
+      "rag_uncertainty": 0,
+      "base_uncertainty": 0
+    }
+  ],
+  "aggregate_metrics": {
+    "avg_retrieval_time": 0.12231457233428955,
+    "avg_rag_generation_time": 4.47915403842926,
+    "avg_base_generation_time": 1.1340376138687134,
+    "avg_total_rag_time": 4.60146861076355,
+    "avg_source_coverage": 0.0,
+    "avg_retrieved_docs": 5.0,
+    "avg_rag_citations": 3.9,
+    "avg_base_citations": 0.2,
+    "avg_rag_relevance": 1.1,
+    "avg_base_relevance": 1.0,
+    "rag_citation_advantage": 1.0,
+    "rag_relevance_advantage": 0.3,
+    "rag_confidence_advantage": 0.0,
+    "category_performance": {
+      "fouls": {
+        "queries": 2,
+        "avg_source_coverage": 0.0,
+        "avg_rag_citations": 4.5,
+        "rag_citation_win_rate": 1.0
+      },
+      "timing": {
+        "queries": 1,
+        "avg_source_coverage": 0.0,
+        "avg_rag_citations": 3.0,
+        "rag_citation_win_rate": 1.0
+      },
+      "rule_changes": {
+        "queries": 1,
+        "avg_source_coverage": 0.0,
+        "avg_rag_citations": 4.0,
+        "rag_citation_win_rate": 1.0
+      },
+      "substitutions": {
+        "queries": 1,
+        "avg_source_coverage": 0.0,
+        "avg_rag_citations": 4.0,
+        "rag_citation_win_rate": 1.0
+      },
+      "court_specifications": {
+        "queries": 2,
+        "avg_source_coverage": 0.0,
+        "avg_rag_citations": 3.5,
+        "rag_citation_win_rate": 1.0
+      },
+      "game_flow": {
+        "queries": 1,
+        "avg_source_coverage": 0.0,
+        "avg_rag_citations": 4.0,
+        "rag_citation_win_rate": 1.0
+      },
+      "officiating": {
+        "queries": 1,
+        "avg_source_coverage": 0.0,
+        "avg_rag_citations": 4.0,
+        "rag_citation_win_rate": 1.0
+      },
+      "technology": {
+        "queries": 1,
+        "avg_source_coverage": 0.0,
+        "avg_rag_citations": 4.0,
+        "rag_citation_win_rate": 1.0
+      }
+    },
+    "total_evaluation_time": 57.358885049819946,
+    "queries_evaluated": 10
+  },
+  "evaluation_metadata": {
+    "timestamp": "2025-06-22 20:31:35",
+    "total_queries": 10,
+    "successful_evaluations": 10,
+    "evaluation_time": 57.358885049819946
+  }
+}

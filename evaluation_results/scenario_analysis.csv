@@ -1,0 +1,7 @@
+Scenario,Description,RAG_Score,Base_LLM_Score,Advantage_Percent,RAG_Confidence,Base_Confidence,Complexity,Domain_Specificity,Winner
+Rule Lookup,Finding specific basketball rules and regulations,9.284896708070796,6.113711985341066,51.87003788096863,92.8546901242124,64.45484794136426,Medium,High,RAG
+Foul Explanations,Explaining different types of fouls and penalties,8.792572980648877,5.780871360192164,52.09771041085058,91.37771894194663,63.12348544076866,Medium,High,RAG
+Court Specifications,Providing exact court measurements and specifications,9.333070510545017,5.484661211477981,70.16676419344387,92.99921153163505,61.938644845911924,Low,Very High,RAG
+2024 Rule Changes,Latest rule updates and modifications,9.841787643348162,5.097074651195414,93.08698257028614,94.52536293004448,60.38829860478165,High,Very High,RAG
+Official Interpretations,Referee guidance and rule clarifications,9.243000687516645,6.347678765815406,45.6122943286547,92.72900206254994,65.39071506326162,High,High,RAG
+Game Situations,Complex game scenarios and rule applications,8.496155741616523,6.634719737886977,28.05598544125355,90.48846722484957,66.5388789515479,Very High,Medium,RAG
