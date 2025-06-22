@@ -1,0 +1,20 @@
+2025-06-22 22:03:38,374 - __main__ - INFO - 🏀 Basketball Data Scraper Starting...
+2025-06-22 22:03:39,956 - __main__ - INFO - ✅ Chrome browser initialized
+2025-06-22 22:03:39,962 - __main__ - INFO - ✅ Loaded 9 leagues from stats/leagues.csv
+2025-06-22 22:03:39,963 - __main__ - INFO - ✅ Basketball Data Scraper initialized
+2025-06-22 22:03:39,963 - __main__ - INFO -    Download dir: stats/downloads
+2025-06-22 22:03:39,964 - __main__ - INFO -    Processed dir: stats/processed
+2025-06-22 22:03:39,964 - __main__ - INFO -    Leagues loaded: 9
+2025-06-22 22:03:39,965 - __main__ - INFO - 🚀 Starting to scrape 9 leagues
+2025-06-22 22:03:39,965 - __main__ - INFO - 📊 Processing league 1/9: BSL
+2025-06-22 22:03:39,966 - __main__ - INFO - 🏀 Downloading data for BSL - Türkiye Sigorta Basketbol Süper Ligi
+2025-06-22 22:04:30,024 - __main__ - ERROR -    ❌ Could not find download button for bsl
+2025-06-22 22:04:30,026 - __main__ - ERROR -    ❌ BSL failed: Failed to download Excel file
+2025-06-22 22:04:30,027 - __main__ - INFO -    ⏳ Waiting 3.0s before next league...
+2025-06-22 22:04:33,027 - __main__ - INFO - 📊 Processing league 2/9: KBSL
+2025-06-22 22:04:33,028 - __main__ - INFO - 🏀 Downloading data for KBSL - Kadınlar Basketbol Süper Ligi
+2025-06-22 22:05:07,313 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(104, 'Connection reset by peer')': /session/3e7fbfa56425c49762987d99331980cd
+2025-06-22 22:05:07,315 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7faf770a1100>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/3e7fbfa56425c49762987d99331980cd
+2025-06-22 22:05:07,316 - urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7faf76f8f410>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/3e7fbfa56425c49762987d99331980cd
+2025-06-22 22:05:07,317 - __main__ - INFO - 🔧 Browser cleaned up
+2025-06-22 22:05:07,318 - __main__ - INFO - 🛑 Scraping interrupted by user
