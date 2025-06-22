@@ -313,7 +313,7 @@ sample_questions = [
 
 # Create Gradio interface
 with gr.Blocks(
-    title="🏀 Türk Basketbol Federasyonu RAG Sistemi",
+    title="🏀 Türkiye Basketbol Federasyonu RAG Sistemi",
     theme=gr.themes.Soft(),
     css="""
     .gradio-container {
