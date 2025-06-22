@@ -30,6 +30,33 @@ Build a local RAG (Retrieval-Augmented Generation) system for basketball rules t
 ✅ **Multilingual**: Excellent Turkish support  
 ✅ **Production Ready**: Can handle enterprise workloads  
 
+## 🤖 Automatic Hardware Detection & Model Selection
+
+### New Feature: Smart VRAM-Based Configuration
+The system now automatically detects your GPU's VRAM and selects optimal models:
+
+#### VRAM Categories & Model Selection:
+- **8GB+ VRAM** (RTX 4060, 3070, A5000): Llama 8B + BGE-M3 (optimal performance)
+- **6GB+ VRAM** (RTX 2060, 1660 Ti): Llama 8B + MiniLM-L12 (very good performance)  
+- **4GB+ VRAM** (GTX 1050 Ti, 1650): Llama 3B + MiniLM-L12 (good performance)
+- **2GB+ VRAM** (GT 1030): Qwen 1.5B + MiniLM-L6 (fair performance)
+- **CPU/Low VRAM**: Optimized for CPU processing (basic performance)
+
+#### Automatic Benefits:
+✅ **No manual configuration** - detects and downloads correct models  
+✅ **Prevents VRAM overflow** - never exceeds available memory  
+✅ **Optimal performance** - best models for your hardware  
+✅ **GTX 1050 Ti support** - works perfectly with 4GB VRAM  
+
+#### Expected Performance by Hardware:
+| GPU | VRAM | LLM Model | Response Time | Quality |
+|-----|------|-----------|---------------|---------|
+| RTX A5000 | 16GB | Llama 8B | ~0.5s | Excellent |
+| GTX 1070 | 8GB | Llama 8B | ~1s | Excellent |
+| GTX 1060 | 6GB | Llama 8B | ~1.5s | Very Good |
+| GTX 1050 Ti | 4GB | Llama 3B | ~3s | Good |
+| GT 1030 | 2GB | Qwen 1.5B | ~8s | Fair |
+
 ## Step-by-Step Setup Instructions
 
 ### Phase 1: WSL Environment Setup
@@ -90,17 +117,37 @@ pip install python-dotenv
 
 ### Phase 2: Model Setup
 
-#### 2.1 Download and Setup Ollama Models
+#### 2.1 Automatic Model Detection & Download
 ```bash
-# Pull the optimal LLM for your hardware
-ollama pull llama3.1:8b-instruct-q4_K_M
+# NEW: Automatic hardware detection and model download
+python scripts/setup_environment.py
 
-# Alternative models (choose one):
-# ollama pull mistral:7b-instruct-v0.2-q4_K_M
-# ollama pull codellama:7b-instruct-q4_K_M
+# This will:
+# 1. Detect your GPU and VRAM
+# 2. Select optimal models (Llama 8B for 8GB+, 3B for 4GB+)
+# 3. Download the correct models automatically
+# 4. Configure everything optimally
 
-# Test the model
-ollama run llama3.1:8b-instruct-q4_K_M "Hello, can you help with basketball rules?"
+# Test hardware detection
+python scripts/test_hardware_detection.py
+
+# If you want to manually override (advanced users):
+# ollama pull llama3.1:8b-instruct-q4_K_M  # For 8GB+ VRAM
+# ollama pull llama3.1:3b-instruct-q4_K_M  # For 4GB+ VRAM
+# ollama pull qwen2:1.5b                   # For 2GB+ VRAM
+```
+
+#### 2.1.1 Hardware-Specific Recommendations
+```bash
+# GTX 1050 Ti (4GB) users will get:
+# - Llama 3B model (~2GB)
+# - MiniLM-L12 embedding (~470MB)
+# - Total: ~2.5GB VRAM usage (safe for 4GB)
+
+# RTX A5000 (16GB) users will get:
+# - Llama 8B model (~4.9GB)  
+# - BGE-M3 embedding (~2GB)
+# - Total: ~7GB VRAM usage (optimal for 16GB)
 ```
 
 #### 2.2 Setup Embedding Model

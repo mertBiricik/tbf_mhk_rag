@@ -5,6 +5,7 @@ Beautiful web interface for Türkiye Basketball Federation rules
 """
 
 import os
+import sys
 import time
 import gradio as gr
 import torch
@@ -14,6 +15,23 @@ from sentence_transformers import SentenceTransformer
 from pathlib import Path
 import json
 import re
+
+# Add src to path for config imports
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+# Set proper environment variables for transformers
+os.environ['HF_HOME'] = './models/huggingface'
+# Remove deprecated TRANSFORMERS_CACHE if set
+if 'TRANSFORMERS_CACHE' in os.environ:
+    del os.environ['TRANSFORMERS_CACHE']
+
+# Import hardware detection config
+try:
+    from src.utils.config import Config
+    HARDWARE_DETECTION_AVAILABLE = True
+except ImportError:
+    print("⚠️  Hardware detection not available - using default models")
+    HARDWARE_DETECTION_AVAILABLE = False
 
 def detect_language(text):
     """Simple language detection for Turkish vs English."""
@@ -52,8 +70,42 @@ class BasketballRAG:
     def __init__(self):
         self.embedding_model = None
         self.collection = None
-        self.llm_model = "llama3.1:8b-instruct-q4_K_M"
+        self.config = None
+        self.setup_hardware_detection()
         self.setup_system()
+    
+    def setup_hardware_detection(self):
+        """Detect hardware and select optimal models."""
+        if HARDWARE_DETECTION_AVAILABLE:
+            try:
+                # Load config with hardware detection
+                self.config = Config()
+                hardware_info = self.config.get_hardware_info()
+                
+                # Get optimal models from hardware detection
+                self.llm_model = hardware_info['current_models']['llm']
+                self.embedding_model_name = hardware_info['current_models']['embedding']
+                
+                print(f"🔍 Hardware Detection Results:")
+                print(f"   GPU: {hardware_info['gpu_name']}")
+                print(f"   VRAM: {hardware_info['vram_gb']:.1f} GB")
+                print(f"   Selected LLM: {self.llm_model}")
+                print(f"   Selected Embedding: {self.embedding_model_name}")
+                
+            except Exception as e:
+                print(f"⚠️  Hardware detection failed: {e}")
+                print("   Using default models...")
+                self.setup_default_models()
+        else:
+            self.setup_default_models()
+    
+    def setup_default_models(self):
+        """Fallback to default models if hardware detection fails."""
+        self.llm_model = "llama3.1:8b-instruct-q4_K_M"
+        self.embedding_model_name = "BAAI/bge-m3"
+        print(f"🎯 Using default models:")
+        print(f"   LLM: {self.llm_model}")
+        print(f"   Embedding: {self.embedding_model_name}")
     
     def setup_system(self):
         """Initialize the RAG system components."""
@@ -61,9 +113,9 @@ class BasketballRAG:
         
         # Load embedding model
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
-        print(f"📊 Loading BGE-M3 on {device}...")
+        print(f"📊 Loading {self.embedding_model_name} on {device}...")
         
-        self.embedding_model = SentenceTransformer('BAAI/bge-m3')
+        self.embedding_model = SentenceTransformer(self.embedding_model_name)
         self.embedding_model = self.embedding_model.to(device)
         
         # Setup ChromaDB

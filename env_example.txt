@@ -8,7 +8,7 @@ PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
 # Model Configuration
 OLLAMA_HOST=localhost:11434
 HF_HOME=./models/huggingface
-TRANSFORMERS_CACHE=./models/transformers_cache
+# Note: TRANSFORMERS_CACHE is deprecated - HF_HOME handles all model caching
 
 # Vector Database
 CHROMA_DB_PATH=./vector_db/chroma_db
