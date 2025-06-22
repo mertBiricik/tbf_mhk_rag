@@ -1,0 +1,26 @@
+[
+  {
+    "league": "kbsl",
+    "gender": "Kadın",
+    "season": "2016-2017",
+    "status": "success",
+    "excel_file": "kbsl_Kadın_2016-2017.xlsx",
+    "csv_file": "kbsl_Kadın_2016-2017.csv"
+  },
+  {
+    "league": "bglk",
+    "gender": "Kadın",
+    "season": "2019-2020",
+    "status": "success",
+    "excel_file": "bglk_Kadın_2019-2020.xlsx",
+    "csv_file": "bglk_Kadın_2019-2020.csv"
+  },
+  {
+    "league": "ebbl",
+    "gender": "Erkek",
+    "season": "2015-2016",
+    "status": "success",
+    "excel_file": "ebbl_Erkek_2015-2016.xlsx",
+    "csv_file": "ebbl_Erkek_2015-2016.csv"
+  }
+]
