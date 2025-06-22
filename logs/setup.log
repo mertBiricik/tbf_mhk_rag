@@ -1,0 +1,77 @@
+2025-06-22 15:34:27,644 - INFO - 🚀 Starting environment setup...
+2025-06-22 15:34:27,644 - INFO - 
+🔍 Running: System Requirements
+2025-06-22 15:34:27,644 - INFO - 🔍 Checking system requirements...
+2025-06-22 15:34:27,644 - INFO - ✅ Python 3.12.8
+2025-06-22 15:34:28,052 - INFO - ✅ CUDA available: 1 device(s)
+2025-06-22 15:34:28,053 - INFO -    Device: NVIDIA RTX A5000 Laptop GPU
+2025-06-22 15:34:28,053 - INFO -    Memory: 16.0 GB
+2025-06-22 15:34:28,053 - INFO - 📊 OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2025-06-22 15:34:28,054 - INFO - 📊 Architecture: x86_64
+2025-06-22 15:34:28,054 - INFO - 
+🔍 Running: Directory Creation
+2025-06-22 15:34:28,054 - INFO - 📁 Created directory: logs
+2025-06-22 15:34:28,055 - INFO - 📁 Created directory: models
+2025-06-22 15:34:28,066 - INFO - 📁 Created directory: models/huggingface
+2025-06-22 15:34:28,076 - INFO - 📁 Created directory: models/transformers_cache
+2025-06-22 15:34:28,078 - INFO - 📁 Created directory: vector_db
+2025-06-22 15:34:28,080 - INFO - 📁 Created directory: data/processed
+2025-06-22 15:34:28,081 - INFO - 📁 Created directory: notebooks
+2025-06-22 15:34:28,082 - INFO - 
+🔍 Running: Environment Variables
+2025-06-22 15:34:28,082 - INFO - 🔧 Added environment variable: HF_HOME
+2025-06-22 15:34:28,082 - INFO - 🔧 Added environment variable: TRANSFORMERS_CACHE
+2025-06-22 15:34:28,083 - INFO - 🔧 Added environment variable: PYTORCH_CUDA_ALLOC_CONF
+2025-06-22 15:34:28,101 - INFO - 
+🔍 Running: Critical Imports
+2025-06-22 15:34:28,101 - INFO - ✅ PyTorch import successful
+2025-06-22 15:34:31,155 - INFO - ✅ Transformers import successful
+2025-06-22 15:34:31,156 - ERROR - ❌ SentenceTransformers import failed: No module named 'sentence_transformers'
+2025-06-22 15:34:31,157 - ERROR - ❌ ChromaDB import failed: No module named 'chromadb'
+2025-06-22 15:34:31,157 - ERROR - ❌ LangChain import failed: No module named 'langchain'
+2025-06-22 15:34:31,158 - INFO - ✅ PyYAML import successful
+2025-06-22 15:34:31,158 - ERROR - ❌ Some required packages are missing. Install them with:
+2025-06-22 15:34:31,158 - ERROR -    pip install -r requirements.txt
+2025-06-22 15:34:31,158 - INFO - 
+🔍 Running: Ollama Installation
+2025-06-22 15:34:31,210 - ERROR - ❌ Ollama not found in PATH. Please install Ollama first:
+2025-06-22 15:34:31,210 - ERROR -    curl -fsSL https://ollama.ai/install.sh | sh
+2025-06-22 15:34:31,211 - ERROR - ❌ Setup incomplete. Failed checks: Directory Creation, Environment Variables, Critical Imports, Ollama Installation
+2025-06-22 15:34:31,211 - ERROR - Please resolve the issues above and run setup again.
+2025-06-22 15:39:17,816 - INFO - 🚀 Starting environment setup...
+2025-06-22 15:39:17,816 - INFO - 
+🔍 Running: System Requirements
+2025-06-22 15:39:17,816 - INFO - 🔍 Checking system requirements...
+2025-06-22 15:39:17,816 - INFO - ✅ Python 3.12.8
+2025-06-22 15:39:18,108 - INFO - ✅ CUDA available: 1 device(s)
+2025-06-22 15:39:18,108 - INFO -    Device: NVIDIA RTX A5000 Laptop GPU
+2025-06-22 15:39:18,108 - INFO -    Memory: 16.0 GB
+2025-06-22 15:39:18,109 - INFO - 📊 OS: Linux 5.15.167.4-microsoft-standard-WSL2
+2025-06-22 15:39:18,109 - INFO - 📊 Architecture: x86_64
+2025-06-22 15:39:18,109 - INFO - 
+🔍 Running: Directory Creation
+2025-06-22 15:39:18,110 - INFO - 📁 Created directory: logs
+2025-06-22 15:39:18,111 - INFO - 📁 Created directory: models
+2025-06-22 15:39:18,113 - INFO - 📁 Created directory: models/huggingface
+2025-06-22 15:39:18,114 - INFO - 📁 Created directory: models/transformers_cache
+2025-06-22 15:39:18,115 - INFO - 📁 Created directory: vector_db
+2025-06-22 15:39:18,117 - INFO - 📁 Created directory: data/processed
+2025-06-22 15:39:18,117 - INFO - 📁 Created directory: notebooks
+2025-06-22 15:39:18,117 - INFO - 
+🔍 Running: Environment Variables
+2025-06-22 15:39:18,122 - INFO - 
+🔍 Running: Critical Imports
+2025-06-22 15:39:18,122 - INFO - ✅ PyTorch import successful
+2025-06-22 15:39:18,415 - INFO - ✅ Transformers import successful
+2025-06-22 15:39:27,009 - INFO - PyTorch version 2.6.0 available.
+2025-06-22 15:39:27,011 - INFO - TensorFlow version 2.19.0 available.
+2025-06-22 15:39:27,295 - INFO - ✅ SentenceTransformers import successful
+2025-06-22 15:39:27,718 - INFO - ✅ ChromaDB import successful
+2025-06-22 15:39:27,722 - INFO - ✅ LangChain import successful
+2025-06-22 15:39:27,722 - INFO - ✅ PyYAML import successful
+2025-06-22 15:39:27,723 - INFO - 
+🔍 Running: Ollama Installation
+2025-06-22 15:39:27,758 - ERROR - ❌ Ollama not found in PATH. Please install Ollama first:
+2025-06-22 15:39:27,759 - ERROR -    curl -fsSL https://ollama.ai/install.sh | sh
+2025-06-22 15:39:27,759 - ERROR - ❌ Setup incomplete. Failed checks: Directory Creation, Environment Variables, Ollama Installation
+2025-06-22 15:39:27,759 - ERROR - Please resolve the issues above and run setup again.

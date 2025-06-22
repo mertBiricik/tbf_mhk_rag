@@ -1,0 +1,103 @@
+# Basketball RAG System Configuration
+
+# Model Configuration
+models:
+  llm:
+    name: "llama3.1:8b-instruct-q4_K_M"
+    base_url: "http://localhost:11434"
+    temperature: 0.1
+    max_tokens: 2048
+    top_p: 0.9
+    repeat_penalty: 1.1
+    
+  embeddings:
+    name: "BAAI/bge-m3"
+    device: "cuda"
+    max_seq_length: 1024
+    batch_size: 32
+
+# Vector Database
+vector_db:
+  path: "./vector_db"
+  collection_name: "basketball_rules"
+  persist_directory: "./vector_db/chroma_db"
+  
+# Document Processing
+document_processing:
+  chunk_size: 800
+  chunk_overlap: 100
+  separators: ["\n\nMadde", "\n\nRule", "\n\nKural", "\n\n", "\n", ". ", " "]
+  min_chunk_size: 100
+  max_chunk_size: 1500
+
+# Retrieval
+retrieval:
+  top_k: 7
+  score_threshold: 0.3
+  search_type: "similarity_score_threshold"
+  enable_reranking: true
+  hybrid_search_weight: 0.7  # Weight for semantic vs keyword search
+
+# Generation
+generation:
+  max_context_length: 4000
+  citation_format: "[Kaynak: {source} - {page}]"
+  language_detection: true
+  response_language: "auto"  # auto, turkish, english
+
+# Basketball-specific settings
+basketball:
+  languages: ["turkish", "english"]
+  rule_priority:
+    changes_2024: 3      # Highest priority
+    interpretations_2023: 2
+    rules_2022: 1        # Base rules
+  
+  document_types:
+    rules_2022:
+      file: "basketbol_oyun_kurallari_2022.txt"
+      type: "rules"
+      year: 2022
+      priority: 1
+      language: "turkish"
+    changes_2024:
+      file: "basketbol_oyun_kurallari_degisiklikleri_2024.txt"
+      type: "changes"
+      year: 2024
+      priority: 3
+      language: "turkish"
+    interpretations_2023:
+      file: "basketbol_oyun_kurallari_resmi_yorumlar_2023.txt"
+      type: "interpretations"
+      year: 2023
+      priority: 2
+      language: "turkish"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_path: "./logs/basketball_rag.log"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# Performance
+performance:
+  gpu_memory_fraction: 0.8
+  enable_mixed_precision: true
+  cache_embeddings: true
+  cache_size: 1000
+
+# Evaluation
+evaluation:
+  test_queries_file: "./data/test_queries.json"
+  metrics: ["accuracy", "relevance", "completeness", "language_quality"]
+  benchmark_file: "./data/benchmark_results.json"
+
+# UI Configuration
+ui:
+  title: "Basketball Rules RAG Assistant"
+  description: "Turkish Basketball Rules Expert System"
+  theme: "soft"
+  max_file_size: "10MB"
+  allowed_file_types: [".txt", ".pdf", ".docx"] 

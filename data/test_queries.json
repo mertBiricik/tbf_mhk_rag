@@ -1,0 +1,84 @@
+{
+    "basketball_rules_queries": [
+        {
+            "id": 1,
+            "query_turkish": "5 faul yapan oyuncuya ne olur?",
+            "query_english": "What happens when a player commits 5 fouls?",
+            "category": "fouls",
+            "expected_sources": ["rules_2022", "interpretations_2023"],
+            "difficulty": "easy"
+        },
+        {
+            "id": 2,
+            "query_turkish": "Şut saati kaç saniyedir?",
+            "query_english": "How many seconds is the shot clock?",
+            "category": "timing",
+            "expected_sources": ["rules_2022"],
+            "difficulty": "easy"
+        },
+        {
+            "id": 3,
+            "query_turkish": "Teknik faul ile kişisel faul arasındaki fark nedir?",
+            "query_english": "What is the difference between technical and personal fouls?",
+            "category": "fouls",
+            "expected_sources": ["rules_2022", "interpretations_2023"],
+            "difficulty": "medium"
+        },
+        {
+            "id": 4,
+            "query_turkish": "2024 yılında hangi kurallar değişti?",
+            "query_english": "What rules changed in 2024?",
+            "category": "rule_changes",
+            "expected_sources": ["changes_2024"],
+            "difficulty": "medium"
+        },
+        {
+            "id": 5,
+            "query_turkish": "Oyuncu değişimi sırasında mola alınabilir mi?",
+            "query_english": "Can a timeout be called during substitution?",
+            "category": "substitutions",
+            "expected_sources": ["rules_2022", "interpretations_2023"],
+            "difficulty": "hard"
+        },
+        {
+            "id": 6,
+            "query_turkish": "Basketbol sahasının boyutları nelerdir?",
+            "query_english": "What are the dimensions of a basketball court?",
+            "category": "court_specifications",
+            "expected_sources": ["rules_2022"],
+            "difficulty": "easy"
+        },
+        {
+            "id": 7,
+            "query_turkish": "Üçlük çizgisi mesafesi ne kadardır?",
+            "query_english": "What is the distance of the three-point line?",
+            "category": "court_specifications",
+            "expected_sources": ["rules_2022"],
+            "difficulty": "easy"
+        },
+        {
+            "id": 8,
+            "query_turkish": "Hangi durumda oyun uzatmaya gider?",
+            "query_english": "In which situation does the game go to overtime?",
+            "category": "game_flow",
+            "expected_sources": ["rules_2022"],
+            "difficulty": "medium"
+        },
+        {
+            "id": 9,
+            "query_turkish": "Hakem kararlarına itiraz edilebilir mi?",
+            "query_english": "Can referee decisions be challenged?",
+            "category": "officiating",
+            "expected_sources": ["rules_2022", "interpretations_2023"],
+            "difficulty": "hard"
+        },
+        {
+            "id": 10,
+            "query_turkish": "Video hakem sistemi ne zaman kullanılır?",
+            "query_english": "When is the video referee system used?",
+            "category": "technology",
+            "expected_sources": ["changes_2024", "interpretations_2023"],
+            "difficulty": "hard"
+        }
+    ]
+} 

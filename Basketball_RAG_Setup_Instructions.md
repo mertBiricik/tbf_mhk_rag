@@ -350,16 +350,106 @@ After completing this setup, you will have:
 - **RAM**: 16-24GB system RAM usage
 - **Storage**: ~5-10GB for models and vector database
 
-## Next Steps for Implementation
-1. Set up WSL environment and conda
-2. Install all dependencies
-3. Download and test models
-4. Implement document processing pipeline
-5. Build vector database
-6. Create RAG chain
-7. Develop web interface
-8. Test with basketball queries
-9. Optimize performance
-10. Deploy and monitor
+## Troubleshooting Section
 
-This setup maximizes your hardware capabilities while ensuring the system is production-ready and basketball-domain optimized. 
+### Common Issues and Solutions
+
+#### Environment Issues
+```bash
+# If CUDA not detected
+nvidia-smi
+# If fails, install CUDA drivers for WSL:
+sudo apt update
+sudo apt install nvidia-cuda-toolkit
+
+# If conda command not found
+export PATH="/opt/miniconda3/bin:$PATH"
+source ~/.bashrc
+```
+
+#### Model Issues
+```bash
+# If Ollama connection fails
+sudo systemctl start ollama
+ollama serve
+
+# If embedding model download fails
+export HF_HOME=./models/huggingface
+huggingface-cli login  # Optional for private models
+```
+
+#### Memory Issues
+```bash
+# If GPU memory errors, reduce batch size in config.yaml:
+models:
+  embeddings:
+    batch_size: 16  # Reduce from 32
+
+# Monitor GPU usage
+watch -n 1 nvidia-smi
+```
+
+### Performance Monitoring
+```bash
+# Check system resources
+htop
+nvidia-smi
+
+# Monitor application logs
+tail -f logs/basketball_rag.log
+```
+
+## Docker Deployment Option
+
+For reproducible deployment, create `Dockerfile`:
+```dockerfile
+FROM nvidia/cuda:12.1-devel-ubuntu22.04
+
+# Install Python and dependencies
+RUN apt-get update && apt-get install -y \
+    python3.11 python3-pip curl
+
+# Install Ollama
+RUN curl -fsSL https://ollama.ai/install.sh | sh
+
+# Copy project files
+COPY . /app
+WORKDIR /app
+
+# Install Python dependencies
+RUN pip install -r requirements.txt
+
+# Expose ports
+EXPOSE 7860 8501 11434
+
+# Start script
+CMD ["bash", "scripts/docker_start.sh"]
+```
+
+## Enhanced Evaluation Framework
+
+### Automated Testing
+```bash
+# Create comprehensive test suite
+python scripts/run_tests.py --full-evaluation
+
+# Performance benchmarking
+python scripts/benchmark.py --iterations 100
+
+# Quality assessment
+python scripts/evaluate_responses.py --test-set data/test_queries.json
+```
+
+## Next Steps for Implementation
+1. ✅ Set up project structure and configuration
+2. 🔄 Set up WSL environment and conda
+3. 🔄 Install all dependencies and test models
+4. ⏳ Implement document processing pipeline
+5. ⏳ Build vector database with basketball rules
+6. ⏳ Create RAG chain with Ollama integration
+7. ⏳ Develop web interface (Gradio/Streamlit)
+8. ⏳ Test with comprehensive basketball queries
+9. ⏳ Optimize performance and fine-tune parameters
+10. ⏳ Deploy, monitor, and maintain system
+
+This setup maximizes your hardware capabilities while ensuring the system is production-ready and basketball-domain optimized. The enhanced troubleshooting and monitoring capabilities ensure smooth operation and easy maintenance. 
