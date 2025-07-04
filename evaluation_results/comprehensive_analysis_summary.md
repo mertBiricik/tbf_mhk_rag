@@ -1,98 +1,98 @@
-# 🏀 Basketball RAG System - Comprehensive Performance Analysis
+# Basketball RAG System - Comprehensive Performance Analysis
 
 ## Executive Summary
 
-**Overall Performance Score**: 94.8/100  
-**Classification**: 🏆 EXCELLENT - Production Ready  
-**Readiness Status**: Production Ready  
-**Analysis Date**: 2025-06-22T20:22:27  
-**Analysis Duration**: 0.13 seconds  
+Overall Performance Score: 94.8/100
+Classification: EXCELLENT - Production Ready
+Readiness Status: Production Ready
+Analysis Date: 2025-06-22T20:22:27
+Analysis Duration: 0.13 seconds
 
 ## Component Performance Breakdown
 
 ### Hardware Performance (85.0/100)
-- **Performance Tier**: Very Good (8GB+)
-- **Estimated Response Time**: 1.0-2.0s
-- **GPU Available**: Yes
-- **Recommended Models**: Llama 8B + BGE-M3
+- Performance Tier: Very Good (8GB+)
+- Estimated Response Time: 1.0-2.0s
+- GPU Available: Yes
+- Recommended Models: Llama 8B + BGE-M3
 
 ### RAG vs Base LLM Comparison (100.0/100)
-- **RAG Win Rate**: 100.0%
-- **Average Advantage**: +56.8%
-- **Scenarios Tested**: 6
-- **Average RAG Score**: 9.2/10
-- **Average Base Score**: 5.9/10
+- RAG Win Rate: 100.0%
+- Average Advantage: +56.8%
+- Scenarios Tested: 6
+- Average RAG Score: 9.2/10
+- Average Base Score: 5.9/10
 
 #### Detailed Scenario Results:
-- **Rule Lookup**: RAG 9.3 vs Base 6.1 (+51.9%) - RAG
-- **Foul Explanations**: RAG 8.8 vs Base 5.8 (+52.1%) - RAG
-- **Court Specifications**: RAG 9.3 vs Base 5.5 (+70.2%) - RAG
-- **2024 Rule Changes**: RAG 9.8 vs Base 5.1 (+93.1%) - RAG
-- **Official Interpretations**: RAG 9.2 vs Base 6.3 (+45.6%) - RAG
-- **Game Situations**: RAG 8.5 vs Base 6.6 (+28.1%) - RAG
+- Rule Lookup: RAG 9.3 vs Base 6.1 (+51.9%) - RAG
+- Foul Explanations: RAG 8.8 vs Base 5.8 (+52.1%) - RAG
+- Court Specifications: RAG 9.3 vs Base 5.5 (+70.2%) - RAG
+- 2024 Rule Changes: RAG 9.8 vs Base 5.1 (+93.1%) - RAG
+- Official Interpretations: RAG 9.2 vs Base 6.3 (+45.6%) - RAG
+- Game Situations: RAG 8.5 vs Base 6.6 (+28.1%) - RAG
 
 ### Accuracy Assessment (92.7/100)
-- **Overall Weighted Accuracy**: 92.7%
-- **Core Metrics Average**: 93.1%
-- **Specialized Metrics Average**: 90.9%
+- Overall Weighted Accuracy: 92.7%
+- Core Metrics Average: 93.1%
+- Specialized Metrics Average: 90.9%
 
 #### Detailed Accuracy Metrics:
-- **Citation Accuracy**: 94.6% (Critical importance)
-- **Language Consistency**: 97.5% (High importance)
-- **Domain Relevance**: 89.5% (Critical importance)
-- **Response Completeness**: 92.7% (High importance)
-- **Source Grounding**: 95.8% (Critical importance)
-- **Factual Accuracy**: 91.5% (Critical importance)
-- **Rule Version Accuracy**: 95.5% (High importance)
-- **Multilingual Quality**: 87.5% (Medium importance)
-- **Context Preservation**: 88.9% (Medium importance)
-- **Ambiguity Handling**: 87.8% (Medium importance)
-- **Update Recognition**: 95.9% (High importance)
-- **Cross-Reference Accuracy**: 91.0% (High importance)
+- Citation Accuracy: 94.6% (Critical importance)
+- Language Consistency: 97.5% (High importance)
+- Domain Relevance: 89.5% (Critical importance)
+- Response Completeness: 92.7% (High importance)
+- Source Grounding: 95.8% (Critical importance)
+- Factual Accuracy: 91.5% (Critical importance)
+- Rule Version Accuracy: 95.5% (High importance)
+- Multilingual Quality: 87.5% (Medium importance)
+- Context Preservation: 88.9% (Medium importance)
+- Ambiguity Handling: 87.8% (Medium importance)
+- Update Recognition: 95.9% (High importance)
+- Cross-Reference Accuracy: 91.0% (High importance)
 
 ### System Optimization (100.0/100)
-- **Optimization Score**: 100/100
-- **Optimization Level**: Excellent
-- **Configuration Source**: config.yaml
+- Optimization Score: 100/100
+- Optimization Level: Excellent
+- Configuration Source: config.yaml
 
 #### Current Configuration:
-- **Chunk Size**: 800
-- **Chunk Overlap**: 100
-- **Top K**: 7
-- **Temperature**: 0.1
-- **Max Tokens**: 2048
-- **Batch Size**: 32
-- **Score Threshold**: 0.3
+- Chunk Size: 800
+- Chunk Overlap: 100
+- Top K: 7
+- Temperature: 0.1
+- Max Tokens: 2048
+- Batch Size: 32
+- Score Threshold: 0.3
 
 ## Recommendations
 
 ### Priority Actions:
-1. ✅ System performing excellently - focus on maintenance
-2. 🎯 Consider production deployment with current configuration
-3. 📊 Implement monitoring for production environment
+1. System performing excellently - focus on maintenance
+2. Consider production deployment with current configuration
+3. Implement monitoring for production environment
 
 ### Immediate Actions:
 
 ### Optimization Opportunities:
-- 🔍 Implement query expansion for better retrieval coverage
-- ⚡ Add response caching for frequently asked questions
-- 📊 Implement real-time performance monitoring
+- Implement query expansion for better retrieval coverage
+- Add response caching for frequently asked questions
+- Implement real-time performance monitoring
 
 ## Performance Benchmarks
 
 ### Response Time by Query Complexity:
-- **Simple Queries**: 0.76s average, 95.0% accuracy
-- **Medium Queries**: 1.09s average, 94.6% accuracy
-- **Complex Queries**: 1.66s average, 88.9% accuracy
-- **Multi-part Queries**: 1.86s average, 88.0% accuracy
+- Simple Queries: 0.76s average, 95.0% accuracy
+- Medium Queries: 1.09s average, 94.6% accuracy
+- Complex Queries: 1.66s average, 88.9% accuracy
+- Multi-part Queries: 1.86s average, 88.0% accuracy
 
 ## Key Insights
 
 ### Strengths:
-- **Excellent Domain Performance**: 56.8% average advantage over base LLM
-- **High Accuracy**: 92.7% weighted accuracy across all metrics
-- **Strong Citation Capability**: 94.6% citation accuracy
-- **Bilingual Excellence**: 97.5% language consistency
+- Excellent Domain Performance: 56.8% average advantage over base LLM
+- High Accuracy: 92.7% weighted accuracy across all metrics
+- Strong Citation Capability: 94.6% citation accuracy
+- Bilingual Excellence: 97.5% language consistency
 
 ### Areas of Excellence:
 - Basketball rule lookup and interpretation
@@ -102,7 +102,6 @@
 - Turkish/English bilingual support
 
 ### Performance Classification:
-🏆 **EXCELLENT PERFORMANCE** - System is production-ready with optimal configuration for basketball domain queries. Demonstrates outstanding performance across all evaluation criteria.
+EXCELLENT PERFORMANCE - System is production-ready with optimal configuration for basketball domain queries. Demonstrates outstanding performance across all evaluation criteria.
 
----
-*Generated by Basketball RAG Comprehensive Performance Analyzer v2.0*
+Generated by Basketball RAG Comprehensive Performance Analyzer v2.0
