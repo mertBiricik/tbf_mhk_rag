@@ -412,7 +412,8 @@ with gr.Blocks(
     </div>
     """)
 
-if __name__ == "__main__":
+def main():
+    """Main function to launch the Gradio interface."""
     if system_ready:
         print("🎉 Basketball RAG System Ready!")
         print("🌐 Starting Gradio web interface...")
@@ -423,4 +424,8 @@ if __name__ == "__main__":
             show_error=True
         )
     else:
-        print("❌ Cannot start web interface - system not ready") 
+        print("❌ Cannot start web interface - system not ready")
+        print("Please check the vector database and try again.")
+
+if __name__ == "__main__":
+    main() 

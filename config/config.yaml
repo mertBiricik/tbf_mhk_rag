@@ -1,4 +1,4 @@
-# Basketball RAG System Configuration
+# Optimized Basketball RAG System Configuration
 
 # Model Configuration
 models:
@@ -22,28 +22,40 @@ vector_db:
   collection_name: "basketball_rules"
   persist_directory: "./vector_db/chroma_db"
   
-# Document Processing
+# Optimized Document Processing
 document_processing:
   chunk_size: 800
   chunk_overlap: 100
   separators: ["\n\nMadde", "\n\nRule", "\n\nKural", "\n\n", "\n", ". ", " "]
-  min_chunk_size: 100
+  min_chunk_size: 50
   max_chunk_size: 1500
+  use_semantic_chunking: true
+  num_workers: null  # Auto-detect based on CPU cores
+  quality_threshold: 0.5
 
-# Retrieval
+# Advanced Retrieval
 retrieval:
   top_k: 7
   score_threshold: 0.3
   search_type: "similarity_score_threshold"
   enable_reranking: true
-  hybrid_search_weight: 0.7  # Weight for semantic vs keyword search
+  enable_query_expansion: true
+  enable_caching: true
+  hybrid_search_weight: 0.7
+  cache_size: 100
+  rerank_top_k: 14  # Retrieve more for reranking
 
-# Generation
+# Optimized Generation
 generation:
   max_context_length: 4000
   citation_format: "[Kaynak: {source} - {page}]"
   language_detection: true
-  response_language: "auto"  # auto, turkish, english
+  response_language: "auto"
+  enable_caching: true
+  enable_streaming: false
+  cache_size: 200
+  cache_ttl: 3600  # 1 hour
+  confidence_threshold: 0.6
 
 # Basketball-specific settings
 basketball:
@@ -81,12 +93,19 @@ logging:
   max_file_size: "10MB"
   backup_count: 5
 
-# Performance
+# Performance Optimizations
 performance:
   gpu_memory_fraction: 0.8
   enable_mixed_precision: true
   cache_embeddings: true
   cache_size: 1000
+  warmup_queries: [
+    "5 faul yapan oyuncuya ne olur?",
+    "Basketbol sahasının boyutları nelerdir?",
+    "What happens when a player gets 5 fouls?"
+  ]
+  batch_processing: true
+  parallel_processing: true
 
 # Evaluation
 evaluation:
@@ -100,4 +119,20 @@ ui:
   description: "Turkish Basketball Rules Expert System"
   theme: "soft"
   max_file_size: "10MB"
-  allowed_file_types: [".txt", ".pdf", ".docx"] 
+  allowed_file_types: [".txt", ".pdf", ".docx"]
+
+# Hardware Optimization
+hardware:
+  auto_detect: true
+  vram_optimization: true
+  cpu_cores: null  # Auto-detect
+  memory_management: "automatic"
+  
+# Advanced Features
+advanced:
+  semantic_search: true
+  query_expansion: true
+  response_reranking: true
+  multilingual_optimization: true
+  context_optimization: true
+  prompt_engineering: true 
