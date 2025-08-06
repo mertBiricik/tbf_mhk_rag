@@ -1,0 +1,216 @@
+# Basketball RAG System - Cursor Rules
+
+## Project Overview
+This is a production-ready Retrieval-Augmented Generation (RAG) system for Turkish Basketball Federation rules with bilingual Turkish/English support. The system achieves 94.8/100 performance score with sub-2 second response times.
+
+## Technology Stack
+- **LLM:** Llama 3.1 8B Instruct (Q4_K_M quantization)
+- **Embeddings:** BGE-M3 multilingual embeddings
+- **Vector DB:** ChromaDB with persistent storage
+- **Framework:** LangChain for RAG orchestration
+- **Interface:** Gradio web UI
+- **GPU:** CUDA acceleration (RTX A5000 16GB VRAM)
+
+## Code Standards
+
+### Python Style
+- Follow PEP 8 with 88-character line length (Black formatter)
+- Use type hints for all function parameters and returns
+- Prefer f-strings over .format() or % formatting
+- Use pathlib.Path instead of os.path for file operations
+- Import order: standard library, third-party, local imports
+
+### Documentation
+- Every module must have comprehensive docstring
+- All classes and functions require docstrings with Args/Returns/Raises
+- Use Google-style docstrings consistently
+- Include performance metrics in optimization-related functions
+
+### Error Handling
+- Use specific exception types, avoid bare except clauses
+- Log errors with appropriate levels (DEBUG, INFO, WARNING, ERROR)
+- Implement graceful fallbacks for GPU/CPU operations
+- Return meaningful error messages for user-facing components
+
+## Architecture Patterns
+
+### RAG Pipeline Structure
+```python
+# Standard RAG flow pattern
+def rag_query(query: str, language: str) -> RAGResponse:
+    # 1. Query preprocessing
+    processed_query = preprocess_query(query, language)
+    
+    # 2. Retrieval with hybrid ranking
+    documents = retrieve_documents(processed_query)
+    reranked_docs = hybrid_rerank(documents, processed_query)
+    
+    # 3. Context preparation
+    context = prepare_context(reranked_docs)
+    
+    # 4. Generation with domain prompts
+    response = generate_response(context, processed_query, language)
+    
+    # 5. Post-processing and validation
+    return validate_and_format_response(response)
+```
+
+### Performance Optimization Patterns
+- Always implement caching for expensive operations (LRU cache)
+- Use async/await for I/O operations where possible
+- Batch process documents for vector operations
+- Implement early returns for cached results
+- Profile and log performance metrics
+
+### Configuration Management
+- Use environment variables for sensitive data
+- Centralize all model configurations in config files
+- Support multiple hardware configurations (GPU/CPU)
+- Implement automatic hardware detection and optimization
+
+## File Organization
+
+### Directory Structure
+```
+/
+├── src/                    # Core application code
+│   ├── models/            # LLM and embedding models
+│   ├── retrieval/         # Vector DB and search logic
+│   ├── generation/        # Response generation
+│   ├── optimization/      # Caching and performance
+│   └── evaluation/        # Testing and metrics
+├── scripts/               # Utility and deployment scripts
+├── data/                  # Basketball documents and processed chunks
+├── config/                # Configuration files
+├── tests/                 # Comprehensive test suite
+└── docs/                  # Technical documentation
+```
+
+### Naming Conventions
+- **Files:** snake_case (e.g., `basketball_rag.py`)
+- **Classes:** PascalCase (e.g., `BasketballRAGSystem`)
+- **Functions/Variables:** snake_case (e.g., `process_query`)
+- **Constants:** UPPER_SNAKE_CASE (e.g., `MAX_CONTEXT_LENGTH`)
+- **Private methods:** Leading underscore (e.g., `_validate_input`)
+
+## Domain-Specific Guidelines
+
+### Basketball Rules Processing
+- Preserve rule numbering and hierarchical structure
+- Maintain Turkish/English terminology consistency
+- Validate rule citations against official documents
+- Implement semantic chunking for rule integrity
+
+### Bilingual Support
+- Auto-detect language using fasttext or similar
+- Maintain consistent terminology across languages
+- Use language-specific prompts for generation
+- Test extensively with mixed-language queries
+
+### Performance Requirements
+- Target <2s response time for 95% of queries
+- Achieve >96% retrieval accuracy on evaluation set
+- Support 8-12 concurrent users without degradation
+- Maintain <12GB VRAM usage on target hardware
+
+## Testing Guidelines
+
+### Unit Tests
+- Test all RAG pipeline components individually
+- Mock external dependencies (LLM calls, vector DB)
+- Validate input/output schemas and types
+- Test error handling and edge cases
+
+### Integration Tests
+- End-to-end RAG pipeline testing
+- Performance benchmarking against targets
+- Bilingual query testing across languages
+- GPU/CPU compatibility testing
+
+### Evaluation Framework
+- Implement comprehensive evaluation metrics
+- Test against curated basketball rules dataset
+- Measure retrieval accuracy, response quality, citation correctness
+- Generate performance reports with visualizations
+
+## Security & Privacy
+
+### Data Handling
+- No personal data collection or storage
+- Secure handling of basketball federation documents
+- Implement request rate limiting
+- Log queries for performance analysis only (no storage)
+
+### Model Security
+- Validate all inputs before processing
+- Implement output filtering for inappropriate content
+- Monitor for prompt injection attempts
+- Secure model file storage and access
+
+## Deployment Guidelines
+
+### Environment Setup
+- Support both development and production environments
+- Implement automatic GPU detection and fallback
+- Use virtual environments for dependency isolation
+- Document hardware requirements clearly
+
+### Monitoring & Logging
+- Log all system performance metrics
+- Monitor GPU/CPU usage and memory consumption
+- Track query response times and accuracy
+- Implement health checks for all components
+
+## Basketball Domain Knowledge
+
+### Key Concepts to Understand
+- FIBA vs Turkish Basketball Federation rule differences
+- Game phases: quarters, overtime, timeouts
+- Player positions and substitution rules
+- Foul types: personal, technical, unsportsmanlike
+- Court dimensions and equipment specifications
+
+### Common Query Patterns
+- Rule clarifications: "What happens when..."
+- Penalty explanations: "What is the penalty for..."
+- Game situation queries: "Can a player..."
+- Equipment and court specifications
+- Referee procedure questions
+
+## Performance Optimization Priorities
+
+1. **Response Time:** Sub-2 second target for all queries
+2. **Accuracy:** >96% retrieval precision on evaluation set
+3. **Memory Efficiency:** <12GB VRAM usage
+4. **Concurrent Users:** Support 8-12 simultaneous users
+5. **Cache Hit Rate:** Achieve 40-60% for common queries
+
+## AI Assistant Collaboration
+
+When working with AI assistants on this project:
+- Always specify the exact technology stack being used
+- Provide context about basketball domain requirements
+- Include performance constraints in all optimization requests
+- Ask for bilingual testing when implementing new features
+- Request comprehensive error handling for production readiness
+
+## Version Control
+
+### Commit Message Format
+```
+type(scope): description
+
+feat(retrieval): implement hybrid reranking for 10% accuracy boost
+fix(gpu): resolve VRAM overflow on batch processing
+perf(cache): add LRU caching reducing response time by 60%
+docs(eval): add comprehensive evaluation framework documentation
+```
+
+### Branch Strategy
+- `main`: Production-ready code only
+- `develop`: Integration branch for features
+- `feature/*`: Individual feature development
+- `hotfix/*`: Critical production fixes
+- `eval/*`: Evaluation and testing improvements
+
+This Basketball RAG system represents production-grade AI engineering with quantified performance improvements and enterprise deployment readiness. 

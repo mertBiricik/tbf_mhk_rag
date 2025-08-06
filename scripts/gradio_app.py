@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Basketball RAG System - Gradio Web Interface
-Beautiful web interface for Türkiye Basketball Federation rules
+Beautiful web interface for Turkish Basketball Federation rules
 """
 
 import os
@@ -30,7 +30,7 @@ try:
     from src.utils.config import Config
     HARDWARE_DETECTION_AVAILABLE = True
 except ImportError:
-    print("⚠️  Hardware detection not available - using default models")
+    print("⚠️ Hardware detection not available")
     HARDWARE_DETECTION_AVAILABLE = False
 
 def detect_language(text):
@@ -293,27 +293,27 @@ def answer_question(question):
 
 # Sample questions for users
 sample_questions = [
-    "5 faul yapan oyuncuya ne olur?",
     "What happens when a player gets 5 fouls?",
-    "Basketbol sahasının boyutları nelerdir?",
+    "5 faul yapan oyuncuya ne olur?",
     "What are basketball court dimensions?",
-    "Şut saati kuralı nasıl işler?",
+    "Basketbol sahasının boyutları nelerdir?",
     "How does the shot clock rule work?",
-    "2024 yılında hangi kurallar değişti?",
+    "Şut saati kuralı nasıl işler?",
     "Which rules changed in 2024?",
-    "Teknik faul ne zaman verilir?",
+    "2024 yılında hangi kurallar değişti?",
     "When is a technical foul given?",
-    "Üçlük atış çizgisi nereden başlar?",
+    "Teknik faul ne zaman verilir?",
     "Where does the three-point line start?",
-    "Oyuncu değişimi nasıl yapılır?",
+    "Üçlük atış çizgisi nereden başlar?",
     "How is player substitution done?",
-    "Free throw kuralları nelerdir?",
-    "What are the free throw rules?"
+    "Oyuncu değişimi nasıl yapılır?",
+    "What are the free throw rules?",
+    "Free throw kuralları nelerdir?"
 ]
 
 # Create Gradio interface
 with gr.Blocks(
-    title="🏀 Türkiye Basketbol Federasyonu RAG Sistemi",
+    title="🏀 Turkish Basketball Federation RAG System",
     theme=gr.themes.Soft(),
     css="""
     .gradio-container {
@@ -332,31 +332,31 @@ with gr.Blocks(
         border-radius: 10px;
         background-color: #f8f9fa;
     }
-    """
+"""
 ) as app:
     
     gr.HTML("""
     <div class="main-header">
-        <h1>🏀 Türkiye Basketbol Federasyonu</h1>
-        <h2>Akıllı Kural Danışmanı</h2>
-        <p>Basketbol kuralları hakkında Türkçe veya İngilizce sorular sorun!</p>
+        <h1>🏀 Turkish Basketball Federation</h1>
+        <h2>AI-Powered Basketball Rules Assistant</h2>
+        <p>Ask questions about basketball rules in Turkish or English!</p>
     </div>
     """)
     
     with gr.Row():
         with gr.Column(scale=2):
             question_input = gr.Textbox(
-                label="🤔 Sorunuz",
-                placeholder="Örnek: 5 faul yapan oyuncuya ne olur?",
+                label="🤔 Your Question",
+                placeholder="Example: What happens when a player gets 5 fouls?",
                 lines=3,
                 elem_classes=["question-box"]
             )
             
             with gr.Row():
-                submit_btn = gr.Button("🔍 Yanıtla", variant="primary", size="lg")
-                clear_btn = gr.Button("🗑️ Temizle", variant="secondary")
+                submit_btn = gr.Button("🔍 Answer", variant="primary", size="lg")
+                clear_btn = gr.Button("🗑️ Clear", variant="secondary", size="lg")
             
-            gr.HTML("<h3>💡 Örnek Sorular:</h3>")
+            gr.HTML("<h3>💡 Sample Questions:</h3>")
             with gr.Row():
                 example_btns = []
                 for i in range(0, len(sample_questions), 2):
@@ -375,14 +375,14 @@ with gr.Blocks(
         
         with gr.Column(scale=3):
             answer_output = gr.Textbox(
-                label="🎯 Yanıt",
+                label="🎯 Answer",
                 lines=12,
                 elem_classes=["answer-box"],
                 interactive=False
             )
             
             sources_output = gr.Textbox(
-                label="📚 Kaynaklar",
+                label="📚 Sources",
                 lines=4,
                 interactive=False
             )
@@ -407,8 +407,8 @@ with gr.Blocks(
     
     gr.HTML("""
     <div style="text-align: center; margin-top: 20px; color: #7f8c8d;">
-        <p>⚡ GPU Hızlandırmalı | 🧠 Llama 3.1 8B | 📊 BGE-M3 Embeddings</p>
-        <p>📋 965 Kural Belgesi | 🎯 Türkçe Dil Desteği</p>
+        <p>⚡ GPU Accelerated | 🧠 Llama 3.1 8B | 📊 BGE-M3 Embeddings</p>
+        <p>📋 965 Rule Documents | 🎯 Bilingual Turkish-English Support</p>
     </div>
     """)
 
